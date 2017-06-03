@@ -1,0 +1,88 @@
+.mt-20 {
+  margin-top: 20px; }
+
+.profile-border {
+  border-top: 3px solid #6200ea; }
+
+.text-default {
+  color: #5D5D5D; }
+
+.text-meta {
+  color: #999; }
+
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0; }
+
+.label-success {
+  background-color: #5cb85c; }
+
+img {
+  width: 100%; }
+
+.image-circle {
+  border-radius: 50%; }
+
+a:hover, a:focus {
+  text-decoration: none; }
+
+button:focus {
+  outline: none !important; }
+
+.btn-attach {
+  width: 100%;
+  border-radius: 0;
+  background-color: #eee;
+  color: #5D5D5D; }
+
+/* Style the tab */
+div.profile-tab {
+  overflow: hidden;
+  border: 0;
+  background-color: #6200ea; }
+  div.profile-tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    transition: 0.5s;
+    font-weight: bold;
+    color: #fff;
+    font-size: 15px; }
+    div.profile-tab button:hover {
+      background: rgba(255, 255, 255, 0.08); }
+    div.profile-tab button.active {
+      background: rgba(255, 255, 255, 0.2); }
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 15px;
+  border-top: none; }
+
+.tabcontent {
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+  /* Fading effect takes 1 second */ }
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
