@@ -3,16 +3,21 @@ var gutil = require('gulp-util');
 var gsass = require('gulp-sass');
 var server = require('gulp-express');
 
+var paths = {
+    sass: ['assets/sass/**/*.scss']
+};
+
 gulp.task('sass', function() {
-    gulp.src('assets/sass/**/*.scss')
-        .pipe(gsass().on('error', sass.logError))
+    gulp.src(paths.sass)
+        .pipe(gsass().on('error', gutil.log))
         .pipe(gulp.dest('./assets/css/'));
 });
 
-//Watch task
-gulp.task('default',function() {
-    gulp.watch('assets/sass/**/*.scss',['sass']);
-});
+gulp.task('default', ['sass']);
+
+gulp.task('watch', function() {
+    gulp.watch(paths.sass, ['sass']);
+})
 
 gulp.task('serve', function() {
     server.run(['server.js']);
