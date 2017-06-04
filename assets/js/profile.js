@@ -22,3 +22,15 @@ function openProfile(evt, selected) {
 }
 
 document.getElementById("profileTab").click();
+
+function openSideNav() {
+    document.getElementById("mt_sidenav").style.width = "150px";
+    document.getElementById("home").style.marginLeft = "150px";
+    // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeSideNav() {
+    document.getElementById("mt_sidenav").style.width = "0";
+    document.getElementById("home").style.marginLeft= "0";
+    // document.body.style.backgroundColor = "white";
+}

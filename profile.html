@@ -42,8 +42,8 @@ WARNING: Respond.js doesn't work if you view the page via file://
 <!--start navbar-->
 <nav class="navbar navbar-fixed-top navbar-light">
     <div class="container">
-        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-label="Toggle navigation">
+        <button class="navbar-toggler hidden-lg-up" type="button" aria-label="Toggle navigation" onclick="openSideNav()">
+            <i class="icon ion-navicon-round"></i>
         </button>
         <img class="navbar-brand" src="assets/images/logo.png" alt="">
 
@@ -68,6 +68,33 @@ WARNING: Respond.js doesn't work if you view the page via file://
         </div>
     </div>
 </nav>
+
+<div id="mt_sidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">
+        <i class="icon ion-arrow-swap"></i>
+    </a>
+    <a href="#">
+        <i class="icon ion-home"></i>
+        <span>Home</span>
+    </a>
+    <a href="#">
+        <i class="icon ion-trophy"></i>
+        <span>contests</span>
+    </a>
+    <a href="#">
+        <i class="icon ion-compass"></i>
+        <span>rules</span>
+    </a>
+    <a href="#">
+        <i class="icon ion-stats-bars"></i>
+        <span>dashboard</span>
+    </a>
+    <a href="#">
+        <i class="icon ion-android-exit"></i>
+        <span>log out</span>
+    </a>
+</div>
+
 <!--end navbar-->
 
 <section class="pt-150">

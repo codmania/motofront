@@ -306,3 +306,93 @@ hr {
     line-height: 40px;
 }
 
+.navbar {
+    .navbar-toggler {
+        padding: 0;
+        margin: 0;
+        width: 46px;
+        height: 46px;
+        line-height: 40px;
+        vertical-align: middle;
+        text-align: center;
+        border: 2px solid #fff;
+        border-radius: 0;
+        color: #fff;
+        background: transparent;
+        font-size: 30px;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            color: #fff;
+        }
+    }
+}
+
+body {
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: $primary;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: $secondary;
+}
+
+.sidenav .closebtn {
+
+}
+
+#home {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#mt_sidenav {
+    a {
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+
+        &::before {
+            background: rgba(255,255,255,0.08);
+        }
+
+        i, span {
+            display: block;
+        }
+
+        i {
+            font-size: 40px;
+        }
+
+        span {
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+    }
+}
+
