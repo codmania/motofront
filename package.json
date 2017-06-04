@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
   },
   "engines": {
     "node": "6.10.3",
@@ -14,6 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-express": "^0.3.5",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8"
   }
 }

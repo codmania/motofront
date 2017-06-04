@@ -1,13 +1,21 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var gutil = require('gulp-util');
+var gsass = require('gulp-sass');
+var server = require('gulp-express');
 
-gulp.task('styles', function() {
+gulp.task('sass', function() {
     gulp.src('assets/sass/**/*.scss')
-        .pipe(sass().on('error', sass.logError))
+        .pipe(gsass().on('error', sass.logError))
         .pipe(gulp.dest('./assets/css/'));
 });
 
 //Watch task
 gulp.task('default',function() {
-    gulp.watch('assets/sass/**/*.scss',['styles']);
+    gulp.watch('assets/sass/**/*.scss',['sass']);
+});
+
+gulp.task('serve', function() {
+    server.run(['server.js']);
+    gulp.run('default');
+    gulp.run('watch');
 });
