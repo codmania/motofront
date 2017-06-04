@@ -1,8 +1,17 @@
 .mt-20 {
   margin-top: 20px; }
 
+.mb-20 {
+  margin-bottom: 20px; }
+
 .mt-5 {
   margin-top: 5px; }
+
+.pt-150 {
+  padding-top: 150px; }
+
+.pt-200 {
+  padding-top: 200px; }
 
 .profile-border {
   border-top: 3px solid #6200ea; }
@@ -189,3 +198,28 @@ hr {
   .footerCopy p.copyright {
     color: #eee;
     font-weight: normal; }
+  .footerCopy .footer ul a {
+    text-transform: uppercase;
+    font-weight: bold; }
+    .footerCopy .footer ul a:hover {
+      color: #FF8300; }
+  .footerCopy .footer ul {
+    margin-bottom: 25px; }
+
+.navbar {
+  background-color: #6200ea; }
+  .navbar .navbar-nav .active > .nav-link {
+    color: #FF8300 !important; }
+  .navbar .navbar-nav li a.nav-link:hover {
+    color: #FF8300 !important; }
+
+.resize.navbar {
+  background-color: #6200ea; }
+  .resize.navbar .navbar-nav li:not(.active) a.nav-link:not(:hover) {
+    color: #fff !important; }
+
+#scroll-top {
+  border: 3px solid #6200ea;
+  width: 50px;
+  height: 50px;
+  line-height: 40px; }

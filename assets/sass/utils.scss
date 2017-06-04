@@ -6,8 +6,20 @@ $grey: #5D5D5D;
     margin-top: 20px;
 }
 
+.mb-20 {
+    margin-bottom: 20px;
+}
+
 .mt-5 {
     margin-top: 5px;
+}
+
+.pt-150 {
+    padding-top: 150px;
+}
+
+.pt-200 {
+    padding-top: 200px;
 }
 
 .profile-border {
@@ -238,6 +250,8 @@ hr {
     background-color: #d9534f!important;
 }
 
+// footer style goes here
+
 .footerCopy {
     background: $grey;
     padding: 40px 0 20px;
@@ -246,5 +260,49 @@ hr {
         color: #eee;
         font-weight: normal;
     }
+
+    .footer ul a {
+        text-transform: uppercase;
+        font-weight: bold;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+
+    .footer ul {
+        margin-bottom: 25px;
+    }
+}
+
+// header navbar style goes here
+
+.navbar {
+    background-color: $primary;
+
+    .navbar-nav {
+        .active > .nav-link {
+            color: $secondary !important;
+        }
+
+        li a.nav-link:hover {
+            color: $secondary !important;
+        }
+    }
+}
+
+.resize.navbar {
+    background-color: $primary;
+
+    .navbar-nav li:not(.active) a.nav-link:not(:hover) {
+        color: #fff !important;
+    }
+}
+
+#scroll-top {
+    border: 3px solid $primary;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
 }
 
