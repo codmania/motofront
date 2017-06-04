@@ -122,5 +122,29 @@ $grey: #5D5D5D;
             margin-top: 15px;
         }
     }
+
+    &__heading {
+        font-size: 1.3em;
+        text-transform: uppercase;
+        color: $secondary;
+        margin-top: 10px;
+
+        span {
+            vertical-align: middle;
+        }
+
+        i {
+            margin-right: 5px;
+            font-size: 1.4em;
+            vertical-align: middle;
+        }
+    }
+}
+
+.list-progress {
+    .item {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
 }
 

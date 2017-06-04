@@ -88,3 +88,18 @@
     padding: 15px; }
     .mt-card__content .friend-image {
       margin-top: 15px; }
+  .mt-card__heading {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: #FF8300;
+    margin-top: 10px; }
+    .mt-card__heading span {
+      vertical-align: middle; }
+    .mt-card__heading i {
+      margin-right: 5px;
+      font-size: 1.4em;
+      vertical-align: middle; }
+
+.list-progress .item {
+  padding-top: 0px;
+  padding-bottom: 0px; }
