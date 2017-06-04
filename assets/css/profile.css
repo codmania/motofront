@@ -162,3 +162,6 @@
       -webkit-transform: scale(1);
       -moz-transform: scale(1);
       -o-transform: scale(1); }
+
+td.rating .ion-android-star {
+  color: #FF8300; }

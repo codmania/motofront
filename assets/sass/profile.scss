@@ -227,3 +227,9 @@ $grey: #5D5D5D;
     }
 }
 
+td.rating {
+    .ion-android-star {
+        color: $secondary;
+    }
+}
+
