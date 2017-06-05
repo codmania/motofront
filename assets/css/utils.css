@@ -7,13 +7,17 @@
 .mt-5 {
   margin-top: 5px; }
 
+.ml-5 {
+  margin-left: 5px; }
+
 .pt-150 {
   padding-top: 150px; }
 
 .pt-200 {
   padding-top: 200px; }
 
-.profile-border {
+.profile-border,
+.mt-border {
   border-top: 3px solid #6200ea; }
 
 .text-default {
@@ -288,3 +292,92 @@ body {
   #mt_sidenav a span {
     text-transform: uppercase;
     font-size: 18px; }
+
+.statistic {
+  display: block;
+  position: relative;
+  vertical-align: middle;
+  padding: 10px 0; }
+  .statistic .value {
+    display: inline-block;
+    color: #333;
+    vertical-align: middle; }
+  .statistic .unit {
+    display: inline-block;
+    color: #5D5D5D;
+    vertical-align: middle; }
+  .statistic.large .value {
+    font-size: 2em;
+    font-weight: bold; }
+  .statistic.large .unit {
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 10px; }
+
+.vt-center {
+  vertical-align: middle; }
+
+.ribbon {
+  text-align: left;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  transition: background .1s ease;
+  padding-top: .8em;
+  padding-bottom: .8em;
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #FF8300;
+  border-color: rgba(255, 131, 0, 0.5); }
+  .ribbon:hover, .ribbon:focus {
+    color: #fff; }
+  .ribbon::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    background-color: transparent !important;
+    border-style: solid;
+    border-width: 0 1.2em 1.2em 0;
+    border-color: transparent;
+    border-right-color: inherit;
+    width: 0;
+    height: 0; }
+  .ribbon.right {
+    left: calc(100% + 1rem + 1.2em);
+    padding-left: 1.2em;
+    padding-right: calc(1rem + 1.2em); }
+    .ribbon.right::after {
+      left: auto;
+      right: 0;
+      border-style: solid;
+      border-width: 1.2em 1.2em 0 0;
+      border-color: transparent;
+      border-top-color: inherit; }
+
+.mt-card .table td, .mt-card .table th {
+  vertical-align: middle; }
+
+.btn-view {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  color: #fff;
+  border: 0;
+  background: #6200ea;
+  -webkit-appearance: initial !important;
+  box-shadow: 2px 2px 4px 0px #d4d4d5;
+  height: 30px;
+  width: 70px;
+  border-radius: 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  font-weight: bold;
+  transition: all 0.4s ease-in-out 0s; }
+  .btn-view:hover, .btn-view:focus {
+    color: #FF8300; }
