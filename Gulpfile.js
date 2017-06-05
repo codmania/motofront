@@ -20,7 +20,6 @@ gulp.task('watch', function() {
 })
 
 gulp.task('serve', function() {
-    server.run(['server.js']);
     gulp.run('default');
     gulp.run('watch');
 });

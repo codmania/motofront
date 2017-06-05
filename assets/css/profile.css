@@ -49,8 +49,8 @@
       .mt-card__image .btn-change-image:hover {
         background: #fff;
         color: #6200ea;
-        -webkit-transition: background 1s;
-        transition: background 1s; }
+        -webkit-transition: background .8s;
+        transition: background .8s; }
     .mt-card__image:hover .img-overlay {
       opacity: 1; }
       .mt-card__image:hover .img-overlay .animation {
