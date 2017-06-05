@@ -94,7 +94,9 @@
     color: #FF8300;
     margin-top: 10px; }
     .mt-card__heading span {
-      vertical-align: middle; }
+      vertical-align: middle;
+      font-family: Raleway;
+      font-weight: bold; }
     .mt-card__heading i {
       margin-right: 5px;
       font-size: 1.4em;
