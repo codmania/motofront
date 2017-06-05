@@ -192,3 +192,6 @@ td.status {
 
 .race-dropdown .dropdown-item {
   color: #5D5D5D; }
+
+thead.mt-thead tr th {
+  background-color: #eee; }
