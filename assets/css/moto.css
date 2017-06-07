@@ -310,3 +310,7 @@ thead.mt-thead tr th {
 
 .list .item span.status + .content {
   display: inline-block; }
+
+@media (max-width: 767px) {
+  .table-wrapper .table-search-input {
+    width: 100%; } }
