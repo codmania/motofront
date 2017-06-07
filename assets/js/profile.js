@@ -1,6 +1,6 @@
 "use strict";
 
-function openProfile(evt, selected) {
+function openTab(evt, selected) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
@@ -21,7 +21,7 @@ function openProfile(evt, selected) {
     evt.currentTarget.className += " active";
 }
 
-document.getElementById("profileTab").click();
+document.getElementById("defaultTab").click();
 
 function openSideNav() {
     document.getElementById("mt_sidenav").style.width = "150px";

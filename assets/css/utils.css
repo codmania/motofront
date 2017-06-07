@@ -214,7 +214,8 @@ hr {
     margin-bottom: 25px; }
 
 .navbar {
-  background-color: #6200ea; }
+  background-color: #6200ea;
+  z-index: 100; }
   .navbar .navbar-nav .active > .nav-link {
     color: #FF8300 !important; }
   .navbar .navbar-nav li a.nav-link:hover {
@@ -285,7 +286,7 @@ body {
 
 #mt_sidenav a {
   text-align: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
   #mt_sidenav a::before {
     background: rgba(255, 255, 255, 0.08); }
   #mt_sidenav a i, #mt_sidenav a span {

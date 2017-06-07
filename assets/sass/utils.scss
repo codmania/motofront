@@ -288,6 +288,7 @@ hr {
 
 .navbar {
     background-color: $primary;
+    z-index: 100;
 
     .navbar-nav {
         .active > .nav-link {
@@ -384,7 +385,7 @@ body {
 #mt_sidenav {
     a {
         text-align: center;
-        border-bottom: 1px solid rgba(255,255,255,0.08);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
         &::before {
             background: rgba(255,255,255,0.08);
