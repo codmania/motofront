@@ -269,3 +269,20 @@ thead.mt-thead tr th {
         visibility: visible;
         -webkit-transform: scaleX(1);
         transform: scaleX(1); }
+
+.score-display {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center; }
+  .score-display .score-value {
+    font-size: 5em;
+    font-weight: normal;
+    color: #6200ea;
+    line-height: 1em;
+    font-family: sans-serif; }
+  .score-display .score-label {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #5D5D5D;
+    text-transform: uppercase; }
