@@ -385,3 +385,32 @@ body {
   transition: all 0.4s ease-in-out 0s; }
   .btn-view:hover, .btn-view:focus {
     color: #FF8300; }
+
+.success {
+  color: #5cb85c; }
+
+.normal {
+  color: #6200ea; }
+
+.danger {
+  color: #d9534f; }
+
+.btn-remove {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  color: #fff;
+  border: 0;
+  background: #FF8300;
+  -webkit-appearance: initial !important;
+  box-shadow: 2px 2px 4px 0px #d4d4d5;
+  height: 30px;
+  width: 70px;
+  border-radius: 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  font-weight: bold;
+  transition: all 0.4s ease-in-out 0s; }
+  .btn-remove:hover, .btn-remove:focus {
+    color: #6200ea; }

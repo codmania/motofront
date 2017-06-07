@@ -204,8 +204,7 @@ thead.mt-thead tr th {
     border: none;
     outline: none;
     cursor: pointer;
-    padding-top: .8em;
-    padding-bottom: .8em;
+    padding: .8em 1em;
     transition: 0.3s;
     font-size: 1em;
     font-family: Raleway;
@@ -286,3 +285,28 @@ thead.mt-thead tr th {
     font-weight: bold;
     color: #5D5D5D;
     text-transform: uppercase; }
+
+.table-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 10px 10px 0px; }
+
+.border-wrapper {
+  border: 1px solid rgba(93, 93, 93, 0.3); }
+
+.table-search-input input,
+.table-search-input button {
+  border-radius: 0; }
+
+.table-search-input .input-group-btn button {
+  border-left: 0; }
+
+.table-search-input.input-group {
+  width: 50%; }
+
+.icon.ion-cube {
+  font-size: 1.2em; }
+
+.list .item span.status + .content {
+  display: inline-block; }

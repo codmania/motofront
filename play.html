@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="motodynasty">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ========== Title ========== -->
+    <title>Play</title>
+
+    <!-- ========== Favicon Ico ========== -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!--favicon is 16*16-->
+    <!-- ========== STYLESHEETS ========== -->
+    <!-- google font Raleway-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- Bootstrap v4.0.0-alpha.5-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <!-- Bootstrap   Ionicons v2.0.0-->
+    <link rel="stylesheet" type="text/css" href="assets/css/ionicons.min.css">
+    <!-- Animate.css v3.4.0-->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+    <!-- magnific-popup v3.4.0-->
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+    <!-- main style-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/utils.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/moto.css">
+
+    <!-- Load JS
+HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+WARNING: Respond.js doesn't work if you view the page via file://
+=====================================-->
+    <!--[if lt IE 9] -->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!--[endif]-->
+</head>
+
+<body id="home" class="top-fixed-navbar">
+<!--start navbar-->
+<nav class="navbar navbar-fixed-top navbar-light">
+    <div class="container">
+        <button class="navbar-toggler hidden-lg-up" type="button" aria-label="Toggle navigation" onclick="openSideNav()">
+            <i class="icon ion-navicon-round"></i>
+        </button>
+        <img class="navbar-brand" src="assets/images/logo.png" alt="">
+
+        <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+            <ul class="nav navbar-nav float-lg-right">
+                <li class="nav-item active">
+                    <a class="nav-link" data-value="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-value="work">contests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-value="facts">rules</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-value="blog">dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-value="contact">log out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="mt_sidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">
+        <i class="icon ion-arrow-swap"></i>
+    </a>
+    <a href="#">
+        <i class="icon ion-home"></i>
+        <span>Home</span>
+    </a>
+    <a href="#">
+        <i class="icon ion-trophy"></i>
+        <span>contests</span>
+    </a>
+    <a href="#">
+        <i class="icon ion-compass"></i>
+        <span>rules</span>
+    </a>
+    <a href="#">
+        <i class="icon ion-stats-bars"></i>
+        <span>dashboard</span>
+    </a>
+    <a href="#">
+        <i class="icon ion-android-exit"></i>
+        <span>log out</span>
+    </a>
+</div>
+
+<!--end navbar-->
+
+<section class="pt-150 mb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="mt-card wow zoomIn" data-wow-delay=".6s">
+                    <div class="mt-card__content">
+                        <a href="#" class="ribbon right">
+                            Available Racers
+                        </a>
+                        <div class="table-wrapper border-wrapper mt-20">
+                            <div class="table-search-input input-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="searchInput" onkeyup="tableSearch()">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-secondary" type="button">
+                                        <i class="icon ion-ios-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+
+                            <div class="table-responsive mt-20">
+                                <table class="table table-bordered mt-border" id="searchTable">
+                                    <thead class="mt-thead">
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Name</th>
+                                            <th>Class</th>
+                                            <th>Status</th>
+                                            <th>Add</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Eli Tomac</td>
+                                            <td>450</td>
+                                            <td>
+                                                <span class="success">
+                                                    <i class="icon ion-cube"></i>
+                                                </span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <a href="#" type="button" class="btn btn-view">Add</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Eli Tomac</td>
+                                            <td>450</td>
+                                            <td>
+                                                <span class="success">
+                                                    <i class="icon ion-cube"></i>
+                                                </span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <a href="#" type="button" class="btn btn-view">Add</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Eli Tomac</td>
+                                            <td>450</td>
+                                            <td>
+                                                <span class="success">
+                                                    <i class="icon ion-cube"></i>
+                                                </span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <a href="#" type="button" class="btn btn-view">Add</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Eli Tomac</td>
+                                            <td>450</td>
+                                            <td>
+                                                <span class="success">
+                                                    <i class="icon ion-cube"></i>
+                                                </span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <a href="#" type="button" class="btn btn-view">Add</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Eli Tomac</td>
+                                            <td>450</td>
+                                            <td>
+                                                <span class="success">
+                                                    <i class="icon ion-cube"></i>
+                                                </span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <a href="#" type="button" class="btn btn-view">Add</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Eli Tomac</td>
+                                            <td>450</td>
+                                            <td>
+                                                <span class="success">
+                                                    <i class="icon ion-cube"></i>
+                                                </span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <a href="#" type="button" class="btn btn-view">Add</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Eli Tomac</td>
+                                            <td>450</td>
+                                            <td>
+                                                <span class="success">
+                                                    <i class="icon ion-cube"></i>
+                                                </span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <a href="#" type="button" class="btn btn-view">Add</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Eli Tomac</td>
+                                            <td>450</td>
+                                            <td>
+                                                <span class="success">
+                                                    <i class="icon ion-cube"></i>
+                                                </span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <a href="#" type="button" class="btn btn-view">Add</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-card mt-20  mb-20 wow zoomIn" data-wow-delay=".6s">
+                    <div class="mt-card__title">
+                        <i class="icon ion-cube"></i>
+                        Status
+                    </div>
+                    <div class="mt-card__content">
+                        <div class="list divided">
+                            <div class="item">
+                                <span class="status success">
+                                    <i class="icon ion-cube"></i>
+                                </span>
+                                <div class="content text-meta">
+                                    Healthy
+                                </div>
+                            </div>
+                            <div class="item">
+                                <span class="status normal">
+                                    <i class="icon ion-cube"></i>
+                                </span>
+                                <div class="content text-meta">
+                                    Multiplier
+                                </div>
+                            </div>
+                            <div class="item">
+                                <span class="status danger">
+                                    <i class="icon ion-cube"></i>
+                                </span>
+                                <div class="content text-meta">
+                                    Out
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="mt-card wow zoomIn" data-wow-delay=".6s">
+                    <div class="mt-card__content">
+                        <a href="#" class="ribbon right">
+                            Current Selections
+                        </a>
+
+                        <div class="table-responsive mt-20">
+                            <table class="table table-bordered mt-border" id="searchTable">
+                                <thead class="mt-thead">
+                                    <tr>
+                                        <th>Positions</th>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Class</th>
+                                        <th>Remove</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <select class="form-control" type="number">
+                                            </select>
+                                        </td>
+                                        <td>3</td>
+                                        <td>Eli Tomac</td>
+                                        <td>450</td>
+                                        <td class="text-xs-center">
+                                            <a href="#" type="button" class="btn btn-remove">Remove</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--start footer-->
+<section class="footerCopy text-xs-center mt-20">
+    <div class="container">
+        <div class="footer">
+            <ul class="list-unstyled">
+                <li><a href="">Home</a></li>
+                <li><a href="">Contests</a></li>
+                <li><a href="">Rules</a></li>
+                <li><a href="">Dashboard</a></li>
+            </ul>
+        </div>
+        <p class="copyright">
+            <span> © 2017 MotoDynasty. Trademarks and brands are the property of their respective owners.
+            </span>
+            <span>
+             Address: Business road 123, Ashborton Grove, Emirates, London 12345 All rights reserved.
+            </span>
+        </p>
+    </div>
+</section>
+<!--end footer-->
+
+<!--start last footer-->
+<section class="lastFooter text-xs-center">
+    <div class="container">
+        <h5>MotoDynasty</h5>
+    </div>
+</section>
+<!--end last footer-->
+
+<!--start button top-->
+<div id="scroll-top">
+    <i class="icon ion-arrow-up-c"></i>
+</div>
+<!--end button top-->
+
+<!--loading page-->
+<section class="loading-page">
+    <div class="loader-inner ball-pulse">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</section>
+<!--loading page-->
+
+<!-- ========== Javascript ========== -->
+<!-- jquery v2.1.4-->
+<script type="text/javascript" src="assets/js/jquery.2.1.4.min.js"></script>
+<!-- Bootstrap v4.0.0-alpha.5-->
+<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<!-- counterup  1.0-->
+<script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+<!--jQuery Waypoints - v2.0.3-->
+<script type="text/javascript" src="assets/js/jquery.counterup.min.js"></script>
+<!-- wow v1.1.2-->
+<script type="text/javascript" src="assets/js/wow.min.js"></script>
+<!-- Magnific Popup - v1.0.1-->
+<script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+<!-- MixItUp v2.1.5-->
+<script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+<!-- circliful-->
+<script type="text/javascript" src="assets/js/jquery.circliful.js"></script>
+<!-- main js-->
+<script type="text/javascript" src="assets/js/custom.js"></script>
+
+<script type="text/javascript" src="assets/js/profile.js"></script>
+
+</body>
+</html>
