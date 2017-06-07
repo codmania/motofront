@@ -1,11 +1,14 @@
+.mt-5 {
+  margin-top: 5px; }
+
 .mt-20 {
   margin-top: 20px; }
 
 .mb-20 {
   margin-bottom: 20px; }
 
-.mt-5 {
-  margin-top: 5px; }
+.mb-100 {
+  margin-bottom: 100px; }
 
 .ml-5 {
   margin-left: 5px; }

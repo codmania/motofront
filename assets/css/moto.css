@@ -3,7 +3,7 @@
   position: relative;
   width: 100%;
   border-radius: 0;
-  box-shadow: 4px 4px 10px 0px #d4d4d5; }
+  box-shadow: 0px 0px 10px 1px #d4d4d5; }
   .mt-card__image {
     display: block;
     position: relative;
