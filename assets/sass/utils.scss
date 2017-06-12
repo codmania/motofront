@@ -43,6 +43,10 @@ $grey: #5D5D5D;
     color: #999;
 }
 
+.color-secondary {
+    color: $secondary !important;
+}
+
 .label {
     display: inline;
     padding: .2em .6em .3em;
@@ -287,8 +291,10 @@ hr {
 // header navbar style goes here
 
 .navbar {
-    background-color: $primary;
     z-index: 100;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 80px;
 
     .navbar-nav {
         .active > .nav-link {
@@ -297,6 +303,81 @@ hr {
 
         li a.nav-link:hover {
             color: $secondary !important;
+        }
+    }
+}
+
+.navbar-moto {
+    &__primary {
+        height: 50px;
+        background-color: $primary;
+
+        &.resize {
+            height: 50px !important;
+
+            li.nav-item {
+                a {
+                    color: #fff !important;
+                }
+            }
+        }
+
+        .navbar-nav {
+            margin: 0;
+        }
+
+        li.nav-item {
+            margin: 0;
+            padding: 0;
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            text-align: center;
+            line-height: 50px;
+            font-size: 25px;
+            transition: all 0.4s ease-in-out 0s;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+
+    &__secondary {
+        position: fixed;
+        top: 50px;
+        width: 100%;
+        left: 0;
+        border-radius: 0;
+        box-shadow: 0 4px 2px -2px #eee !important;
+        background-color: #fff;
+
+        img.navbar-brand {
+            max-width: 200px;
+            max-height: 52px;
+        }
+
+        .logo-default {
+            display: block;
+        }
+
+        .logo-resize {
+            display: none;
+        }
+
+        &.resize {
+            .logo-default {
+                display: none;
+            }
+
+            .logo-resize {
+                display: block;
+                max-width: 160px;
+            }
+
+            ul.navbar-nav {
+                margin: 10px 0;
+            }
         }
     }
 }
@@ -643,4 +724,12 @@ button.btn {
         }
     }
 }
+
+.display-block {
+    display: block;
+    widows: 100%;
+    position: relative;
+}
+
+
 

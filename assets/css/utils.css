@@ -29,6 +29,9 @@
 .text-meta {
   color: #999; }
 
+.color-secondary {
+  color: #FF8300 !important; }
+
 .label {
   display: inline;
   padding: .2em .6em .3em;
@@ -214,12 +217,59 @@ hr {
     margin-bottom: 25px; }
 
 .navbar {
-  background-color: #6200ea;
-  z-index: 100; }
+  z-index: 100;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 80px; }
   .navbar .navbar-nav .active > .nav-link {
     color: #FF8300 !important; }
   .navbar .navbar-nav li a.nav-link:hover {
     color: #FF8300 !important; }
+
+.navbar-moto__primary {
+  height: 50px;
+  background-color: #6200ea; }
+  .navbar-moto__primary.resize {
+    height: 50px !important; }
+    .navbar-moto__primary.resize li.nav-item a {
+      color: #fff !important; }
+  .navbar-moto__primary .navbar-nav {
+    margin: 0; }
+  .navbar-moto__primary li.nav-item {
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    transition: all 0.4s ease-in-out 0s; }
+    .navbar-moto__primary li.nav-item:hover {
+      background: rgba(255, 255, 255, 0.2); }
+
+.navbar-moto__secondary {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  left: 0;
+  border-radius: 0;
+  box-shadow: 0 4px 2px -2px #eee !important;
+  background-color: #fff; }
+  .navbar-moto__secondary img.navbar-brand {
+    max-width: 200px;
+    max-height: 52px; }
+  .navbar-moto__secondary .logo-default {
+    display: block; }
+  .navbar-moto__secondary .logo-resize {
+    display: none; }
+  .navbar-moto__secondary.resize .logo-default {
+    display: none; }
+  .navbar-moto__secondary.resize .logo-resize {
+    display: block;
+    max-width: 160px; }
+  .navbar-moto__secondary.resize ul.navbar-nav {
+    margin: 10px 0; }
 
 .resize.navbar {
   background-color: #6200ea; }
@@ -482,3 +532,8 @@ button.btn {
       font-style: normal;
       font-weight: 700;
       box-shadow: 0 0 0 1px transparent inset; }
+
+.display-block {
+  display: block;
+  widows: 100%;
+  position: relative; }
