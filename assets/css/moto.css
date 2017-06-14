@@ -311,6 +311,23 @@ thead.mt-thead tr th {
 .list .item span.status + .content {
   display: inline-block; }
 
+@media (max-width: 991px) {
+  .navbar-moto__primary li.nav-item a {
+    color: #fff !important; }
+  .navbar-moto__secondary .navbar-toggler {
+    color: #333;
+    border: 2px solid #333;
+    transition: all 0.4s ease-in-out 0s; }
+    .navbar-moto__secondary .navbar-toggler:hover {
+      color: #6200ea;
+      border-color: #6200ea; }
+  .navbar-moto__secondary.resize .navbar-toggler {
+    color: #fff;
+    border: 2px solid #fff; }
+    .navbar-moto__secondary.resize .navbar-toggler:hover {
+      color: #FF8300;
+      border-color: #FF8300; } }
+
 @media (max-width: 767px) {
   .table-wrapper .table-search-input {
     width: 100%; } }
