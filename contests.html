@@ -137,96 +137,295 @@ WARNING: Respond.js doesn't work if you view the page via file://
                         <a href="#" class="ribbon right">
                             Contests
                         </a>
-                        <div class="table-responsive mt-20">
-                            <table class="table table-bordered mt-border">
-                                <thead class="mt-thead">
-                                    <tr>
-                                        <th>Date</th>
-                                        <th>Sport</th>
-                                        <th>Contest</th>
-                                        <th>Entry Fee</th>
-                                        <th>Prize</th>
-                                        <th>Entries</th>
-                                        <th>Times</th>
-                                        <th>Join</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>3 Jun</td>
-                                        <td>Pro Motocross</td>
-                                        <td>Thunder Valley</td>
-                                        <td>Free</td>
-                                        <td>_</td>
-                                        <td>0</td>
-                                        <td>2d 1h 54min3s</td>
-                                        <td class="text-xs-center">
-                                            <a href="#" type="button" class="btn btn-view">Enter</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>3 Jun</td>
-                                        <td>Pro Motocross</td>
-                                        <td>Thunder Valley</td>
-                                        <td>Free</td>
-                                        <td>_</td>
-                                        <td>0</td>
-                                        <td>2d 1h 54min3s</td>
-                                        <td class="text-xs-center">
-                                            <a href="#" type="button" class="btn btn-view">Enter</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>3 Jun</td>
-                                        <td>Pro Motocross</td>
-                                        <td>Thunder Valley</td>
-                                        <td>Free</td>
-                                        <td>_</td>
-                                        <td>0</td>
-                                        <td>2d 1h 54min3s</td>
-                                        <td class="text-xs-center">
-                                            <a href="#" type="button" class="btn btn-view">Enter</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>3 Jun</td>
-                                        <td>Pro Motocross</td>
-                                        <td>Thunder Valley</td>
-                                        <td>Free</td>
-                                        <td>_</td>
-                                        <td>0</td>
-                                        <td>2d 1h 54min3s</td>
-                                        <td class="text-xs-center">
-                                            <a href="#" type="button" class="btn btn-view">Enter</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>3 Jun</td>
-                                        <td>Pro Motocross</td>
-                                        <td>Thunder Valley</td>
-                                        <td>Free</td>
-                                        <td>_</td>
-                                        <td>0</td>
-                                        <td>2d 1h 54min3s</td>
-                                        <td class="text-xs-center">
-                                            <a href="#" type="button" class="btn btn-view">Enter</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>3 Jun</td>
-                                        <td>Pro Motocross</td>
-                                        <td>Thunder Valley</td>
-                                        <td>Free</td>
-                                        <td>_</td>
-                                        <td>0</td>
-                                        <td>2d 1h 54min3s</td>
-                                        <td class="text-xs-center">
-                                            <a href="#" type="button" class="btn btn-view">Enter</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+
+                        <div class="profile-tab mt-10">
+                            <button class="tablinks" onclick="openTab(event, 'tabSupercross')" id="defaultTab">Supercross</button>
+                            <button class="tablinks" onclick="openTab(event, 'tabMotocross')">Pro Motocross</button>
+                            <button class="tablinks" onclick="openTab(event, 'tabMotoGP')">MotoGP</button>
+                            <button class="tablinks" onclick="openTab(event, 'tabNascar')">NasCar</button>
+                            <button class="tablinks" onclick="openTab(event, 'tabIndycar')">IndyCar</button>
                         </div>
+
+                        <div id="tabSupercross" class="tabcontent">
+                            <div class="row">
+                                <div class="inline-tab">
+                                    <button class="tab-sublinks text-capital" onclick="openSubTab(event, 'tabSupercross_featured')" id="defaultSubTab">Featured</button>
+                                    <button class="tab-sublinks text-capital" onclick="openSubTab(event, 'tabSupercross_group')">Group Contests</button>
+                                    <button class="tab-sublinks" onclick="openSubTab(event, 'tabSupercross_head')">Head to Heads</button>
+                                    <button class="tab-sublinks" onclick="openSubTab(event, 'tabSupercross_beginner')">Beginner Contests</button>
+                                </div>
+
+                                <div id="tabSupercross_featured" class="tab-subcontent">
+                                    <div class="table-responsive mt-20">
+                                        <table class="table table-bordered mt-border">
+                                            <thead class="mt-thead">
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Name</th>
+                                                    <th>Class</th>
+                                                    <th>Prediction</th>
+                                                    <th>Race Finish</th>
+                                                    <th>Accurancy Pts</th>
+                                                    <th>+/-</th>
+                                                    <th>Moto Win</th>
+                                                    <th>Holeshot</th>
+                                                    <th>Laps Led</th>
+                                                    <th>Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Copper Webb</td>
+                                                    <td>450</td>
+                                                    <td>3</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Copper Webb</td>
+                                                    <td>450</td>
+                                                    <td>3</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Copper Webb</td>
+                                                    <td>450</td>
+                                                    <td>3</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Copper Webb</td>
+                                                    <td>450</td>
+                                                    <td>3</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Copper Webb</td>
+                                                    <td>450</td>
+                                                    <td>3</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Copper Webb</td>
+                                                    <td>450</td>
+                                                    <td>3</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div id="tabSupercross_group" class="tab-subcontent">
+                                    <div class="table-responsive mt-20">
+                                        <table class="table table-bordered mt-border">
+                                            <thead class="mt-thead">
+                                                <tr>
+                                                    <th>Position</th>
+                                                    <th>Username</th>
+                                                    <th>Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Craig</td>
+                                                    <td>295</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Craig</td>
+                                                    <td>295</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Craig</td>
+                                                    <td>295</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Craig</td>
+                                                    <td>295</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Craig</td>
+                                                    <td>295</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Craig</td>
+                                                    <td>295</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div id="tabSupercross_head" class="tab-subcontent">
+                                </div>
+
+                                <div id="tabSupercross_beginner" class="tab-subcontent">
+                                </div>
+
+<!--                                 <div class="table-responsive mt-20">
+                                    <table class="table table-bordered mt-border">
+                                        <thead class="mt-thead">
+                                            <tr>
+                                                <th>Date</th>
+                                                <th>Sport</th>
+                                                <th>Contest</th>
+                                                <th>Entry Fee</th>
+                                                <th>Prize</th>
+                                                <th>Entries</th>
+                                                <th>Times</th>
+                                                <th>Join</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>3 Jun</td>
+                                                <td>Pro Motocross</td>
+                                                <td>Thunder Valley</td>
+                                                <td>Free</td>
+                                                <td>_</td>
+                                                <td>0</td>
+                                                <td>2d 1h 54min3s</td>
+                                                <td class="text-xs-center">
+                                                    <a href="#" type="button" class="btn btn-view">Enter</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3 Jun</td>
+                                                <td>Pro Motocross</td>
+                                                <td>Thunder Valley</td>
+                                                <td>Free</td>
+                                                <td>_</td>
+                                                <td>0</td>
+                                                <td>2d 1h 54min3s</td>
+                                                <td class="text-xs-center">
+                                                    <a href="#" type="button" class="btn btn-view">Enter</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3 Jun</td>
+                                                <td>Pro Motocross</td>
+                                                <td>Thunder Valley</td>
+                                                <td>Free</td>
+                                                <td>_</td>
+                                                <td>0</td>
+                                                <td>2d 1h 54min3s</td>
+                                                <td class="text-xs-center">
+                                                    <a href="#" type="button" class="btn btn-view">Enter</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3 Jun</td>
+                                                <td>Pro Motocross</td>
+                                                <td>Thunder Valley</td>
+                                                <td>Free</td>
+                                                <td>_</td>
+                                                <td>0</td>
+                                                <td>2d 1h 54min3s</td>
+                                                <td class="text-xs-center">
+                                                    <a href="#" type="button" class="btn btn-view">Enter</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3 Jun</td>
+                                                <td>Pro Motocross</td>
+                                                <td>Thunder Valley</td>
+                                                <td>Free</td>
+                                                <td>_</td>
+                                                <td>0</td>
+                                                <td>2d 1h 54min3s</td>
+                                                <td class="text-xs-center">
+                                                    <a href="#" type="button" class="btn btn-view">Enter</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3 Jun</td>
+                                                <td>Pro Motocross</td>
+                                                <td>Thunder Valley</td>
+                                                <td>Free</td>
+                                                <td>_</td>
+                                                <td>0</td>
+                                                <td>2d 1h 54min3s</td>
+                                                <td class="text-xs-center">
+                                                    <a href="#" type="button" class="btn btn-view">Enter</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div id="tabMotocross" class="tabcontent">
+                            <div class="mt-card__content">
+                                
+                            </div>
+                        </div>
+
+                        <div id="tabMotoGP" class="tabcontent">
+                            <div class="mt-card__content">
+                                
+                            </div>
+                        </div>
+
+                        <div id="tabNascar" class="tabcontent">
+                            <div class="mt-card__content">
+                                
+                            </div>
+                        </div>
+
+                        <div id="tabIndycar" class="tabcontent">
+                            <div class="mt-card__content">
+                                
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

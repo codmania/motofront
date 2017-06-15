@@ -14,6 +14,10 @@ $grey: #5D5D5D;
     margin-top: 5px;
 }
 
+.mt-10 {
+    margin-top: 10px;
+}
+
 .mt-20 {
     margin-top: 20px;
 }
@@ -158,15 +162,13 @@ div.profile-tab {
 }
 
 /* Style the tab content */
-.tabcontent {
+.tabcontent,
+.tab-subcontent {
     display: none;
     padding: 15px;
     border-top: none;
-}
-
-.tabcontent {
     -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+            animation: fadeEffect 1s;
 }
 
 @-webkit-keyframes fadeEffect {
