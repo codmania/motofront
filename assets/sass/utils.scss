@@ -55,6 +55,10 @@ $grey: #5D5D5D;
     color: $secondary !important;
 }
 
+.border-right {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .label {
     display: inline;
     padding: .2em .6em .3em;
