@@ -38,14 +38,34 @@ WARNING: Respond.js doesn't work if you view the page via file://
     <!--[endif]-->
 </head>
 
-<body id="home" class="top-fixed-navbar">
-<!--start navbar-->
-<nav class="navbar navbar-fixed-top navbar-light">
+<body id="home" class="nav-top">
+
+<section class="sub-navTop">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="social">
+                    <ul class="list-unstyled">
+                        <li><a href=""><i class="icon ion-social-facebook"></i></a></li>
+                        <li><a href=""><i class="icon ion-social-twitter"></i></a></li>
+                        <li><a href=""><i class="icon ion-social-googleplus"></i></a></li>
+                        <li><a href=""><i class="icon ion-social-youtube-outline"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<nav class="navbar navbar-fixed-top navbar-light navbar-moto__animate">
     <div class="container">
         <button class="navbar-toggler hidden-lg-up" type="button" aria-label="Toggle navigation" onclick="openSideNav()">
             <i class="icon ion-navicon-round"></i>
         </button>
-        <img class="navbar-brand" src="assets/images/logo.png" alt="">
+        <a href="#">
+            <img class="navbar-brand logo-default" src="assets/images/logo.png" alt="Default Logo">
+            <img class="navbar-brand logo-resize" src="assets/images/logo_resize.png" alt="Resize Logo">
+        </a>
 
         <div class="collapse navbar-toggleable-md" id="navbarResponsive">
             <ul class="nav navbar-nav float-lg-right">
@@ -98,9 +118,20 @@ WARNING: Respond.js doesn't work if you view the page via file://
 <!--end navbar-->
 
 <section class="pt-150 mb-100">
-    <div class="container">
+    <div class="moto-container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-xs-12">
+                <center class="title wow zoomIn" data-wow-delay=".6s">
+                    <h2 class="h1">Contests</h2>
+
+                    <div class="hex">
+                        <span>&#x2B22;</span>
+                    </div>
+                    <p>
+                        a passion for racing
+                    </p>
+                </center>
+
                 <div class="mt-card wow zoomIn" data-wow-delay=".6s">
                     <div class="mt-card__content">
                         <a href="#" class="ribbon right">
