@@ -141,7 +141,9 @@ WARNING: Respond.js doesn't work if you view the page via file://
                             Jason Anderson | 21
                         </a>
                         <div class="mt-card__subheader text-xs-center">
-                            Rockstar Energy Husqvana Suppercross | Pro Motocross
+                            Rockstar Energy Husqvana
+                            <br>
+                            Suppercross | Pro Motocross
                         </div>
                         <div class="mt-card__description text-xs-center">
                             Manufacturer: Husqvarna
@@ -225,115 +227,117 @@ WARNING: Respond.js doesn't work if you view the page via file://
             <div class="col-lg-8 col-md-8 col-xs-12">
                 <div class="mt-card wow zoomIn" data-wow-delay=".6s">
                     <div class="profile-tab">
-                        <button class="tablinks" onclick="openTab(event, 'tabProfile')" id="defaultTab">Profile</button>
-                        <button class="tablinks" onclick="openTab(event, 'tabContests')">My Contests</button>
-                        <button class="tablinks" onclick="openTab(event, 'tabLeagues')">My Leagues</button>
+                        <button class="tablinks" onclick="openTab(event, 'tabOverall')" id="defaultTab">Overall</button>
+                        <button class="tablinks" onclick="openTab(event, 'tabSupercross')">Supercross</button>
+                        <button class="tablinks" onclick="openTab(event, 'tabMotocross')">Pro Motocross</button>
+                        <button class="tablinks" onclick="openTab(event, 'tabStatistics')">My Statistics</button>
                     </div>
 
-                    <div id="tabProfile" class="tabcontent">
+                    <div id="tabOverall" class="tabcontent">
                         <div class="row">
-                            <div class="col-md-7 col-xs-12">
+                            <div class="col-md-12 col-xs-12">
                                 <div class="mt-card__heading">
                                     <i class="icon ion-document-text"></i>
-                                    <span>Experience</span>
+                                    <span>Statistics</span>
                                 </div>
                                 <div class="mt-card__content side-pd-none">
-                                    <div class="list">
-                                        <div class="item">
-                                            <i class="icon ion-android-radio-button-off"></i>
-                                            <div class="content">
-                                                <a class="text-default">
-                                                    Owner at Stormin Ltd.
-                                                </a>
-                                                <div class="text-meta">
-                                                    March 2013 ~ Now
+                                    <div class="row">
+                                        <div class="col-md-6 col-xs-6">
+                                            <div class="list">
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">52.75</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>FPPR:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">76%</span>
+                                                    <i class="icon ion-stop normal"></i>
+                                                    <span>Play Rate:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">100K</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Total FP:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">10,954</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Total PP:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">7.91</span>
+                                                    <i class="icon ion-stop normal"></i>
+                                                    <span>PPPR:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">89K</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Total AP:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">18.8</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>APPR:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">4.5</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Avg Finish:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">5.6</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Avg SP:</span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="item">
-                                            <i class="icon ion-android-radio-button-off"></i>
-                                            <div class="content">
-                                                <a class="text-default">
-                                                    Owner at Stormin Ltd.
-                                                </a>
-                                                <div class="text-meta">
-                                                    March 2013 ~ Now
+
+                                        <div class="col-md-6 col-xs-6">
+                                            <div class="list">
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">1.1</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>AVG +/-:</span>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <i class="icon ion-android-radio-button-off"></i>
-                                            <div class="content">
-                                                <a class="text-default">
-                                                    Owner at Stormin Ltd.
-                                                </a>
-                                                <div class="text-meta">
-                                                    March 2013 ~ Now
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">1st</span>
+                                                    <i class="icon ion-stop normal"></i>
+                                                    <span>Best Finish:</span>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <i class="icon ion-android-radio-button-off"></i>
-                                            <div class="content">
-                                                <a class="text-default">
-                                                    Owner at Stormin Ltd.
-                                                </a>
-                                                <div class="text-meta">
-                                                    March 2013 ~ Now
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">14</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Race Wins:</span>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xs-12">
-                                <div class="mt-card__heading">
-                                    <i class="icon ion-university"></i>
-                                    <span>Education</span>
-                                </div>
-                                <div class="mt-card__content side-pd-none">
-                                    <div class="list">
-                                        <div class="item">
-                                            <i class="icon ion-android-radio-button-off"></i>
-                                            <div class="content">
-                                                <a class="text-default">
-                                                    Owner at Stormin Ltd.
-                                                </a>
-                                                <div class="text-meta">
-                                                    March 2013 ~ Now
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">6</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Moto Wins:</span>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <i class="icon ion-android-radio-button-off"></i>
-                                            <div class="content">
-                                                <a class="text-default">
-                                                    Owner at Stormin Ltd.
-                                                </a>
-                                                <div class="text-meta">
-                                                    March 2013 ~ Now
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">4</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Heat Wins:</span>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <i class="icon ion-android-radio-button-off"></i>
-                                            <div class="content">
-                                                <a class="text-default">
-                                                    Owner at Stormin Ltd.
-                                                </a>
-                                                <div class="text-meta">
-                                                    March 2013 ~ Now
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">7</span>
+                                                    <i class="icon ion-stop danger"></i>
+                                                    <span>Semi Wins:</span>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <i class="icon ion-android-radio-button-off"></i>
-                                            <div class="content">
-                                                <a class="text-default">
-                                                    Owner at Stormin Ltd.
-                                                </a>
-                                                <div class="text-meta">
-                                                    March 2013 ~ Now
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">2</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>LCQ Wins:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">33</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Holeshots:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">301</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Laps Led:</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -406,43 +410,19 @@ WARNING: Respond.js doesn't work if you view the page via file://
                                 <div class="mt-card__content side-pd-none">
                                     <div class="list list-progress">
                                         <div class="item">
-                                            <a class="text-default">
-                                                SUPPERCROSS
+                                            <a class="text-default text-capital">
+                                                Supercross - 75%
                                             </a>
                                             <div class="progress mt-5">
-                                                <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <a class="text-default">
-                                                MXGP
+                                            <a class="text-default text-capital">
+                                                Pro Motocross - 25%
                                             </a>
                                             <div class="progress mt-5">
-                                                <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <a class="text-default">
-                                                MotoGP
-                                            </a>
-                                            <div class="progress mt-5">
-                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <a class="text-default">
-                                                NASCAR
-                                            </a>
-                                            <div class="progress mt-5">
-                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <a class="text-default">
-                                                IndyCar
-                                            </a>
-                                            <div class="progress mt-5">
-                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -451,13 +431,19 @@ WARNING: Respond.js doesn't work if you view the page via file://
                         </div>
                     </div>
 
-                    <div id="tabContests" class="tabcontent">
+                    <div id="tabSupercross" class="tabcontent">
                         <div class="mt-card__content">
                             
                         </div>
                     </div>
 
-                    <div id="tabLeagues" class="tabcontent">
+                    <div id="tabMotocross" class="tabcontent">
+                        <div class="mt-card__content">
+                            
+                        </div>
+                    </div>
+
+                    <div id="tabStatistics" class="tabcontent">
                         <div class="mt-card__content">
                             
                         </div>

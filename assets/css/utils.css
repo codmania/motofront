@@ -29,6 +29,12 @@
 .text-meta {
   color: #999; }
 
+.text-capital {
+  text-transform: uppercase; }
+
+.text-bold {
+  font-weight: bold; }
+
 .color-secondary {
   color: #FF8300 !important; }
 
@@ -81,7 +87,8 @@ div.profile-tab {
     font-weight: bold;
     color: #fff;
     font-size: 15px;
-    position: relative; }
+    position: relative;
+    text-transform: uppercase; }
     div.profile-tab button:hover {
       background: rgba(255, 255, 255, 0.08); }
     div.profile-tab button.active {
@@ -367,6 +374,9 @@ body {
     font-size: 1em;
     font-weight: bold;
     margin-left: 10px; }
+  .statistic.value-large .value {
+    font-size: 1.5em;
+    font-weight: bold; }
 
 .vt-center {
   vertical-align: middle; }
@@ -537,3 +547,11 @@ button.btn {
   display: block;
   widows: 100%;
   position: relative; }
+
+.list .item-group {
+  padding: 8px 0px; }
+  .list .item-group i.icon {
+    margin-right: 8px; }
+
+.list .item-group:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }

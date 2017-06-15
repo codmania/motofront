@@ -43,6 +43,14 @@ $grey: #5D5D5D;
     color: #999;
 }
 
+.text-capital {
+    text-transform: uppercase;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
 .color-secondary {
     color: $secondary !important;
 }
@@ -111,6 +119,7 @@ div.profile-tab {
         color: #fff;
         font-size: 15px;
         position: relative;
+        text-transform: uppercase;
 
         &:hover {
             background: rgba(255,255,255,0.08);
@@ -517,6 +526,13 @@ body {
             margin-left: 10px;
         }
     }
+
+    &.value-large {
+        .value {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    }
 }
 
 .vt-center {
@@ -731,5 +747,18 @@ button.btn {
     position: relative;
 }
 
+.list {
+    .item-group {
+        padding: 8px 0px;
+
+        i.icon {
+            margin-right: 8px;
+        }
+    }
+
+    .item-group:not(:last-child) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
 
 
