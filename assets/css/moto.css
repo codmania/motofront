@@ -311,6 +311,41 @@ thead.mt-thead tr th {
 .list .item span.status + .content {
   display: inline-block; }
 
+.moto-table thead tr {
+  background-color: rgba(98, 0, 234, 0.8); }
+  .moto-table thead tr th {
+    color: #fff;
+    font-weight: bold;
+    text-align: center; }
+
+.moto-table tbody th {
+  background-color: rgba(98, 0, 234, 0.8);
+  color: #fff;
+  font-weight: bold;
+  text-align: left; }
+
+.moto-table tbody td {
+  font-weight: bold;
+  text-align: center; }
+
+.moto-table tbody tr {
+  transition: all 0.2s ease-in-out 0s; }
+
+.moto-table tbody tr:hover {
+  background-color: rgba(98, 0, 234, 0.5) !important; }
+  .moto-table tbody tr:hover td {
+    color: #fff; }
+
+.moto-table.stripe > tbody > tr:nth-of-type(odd):not(.moto-table__total) {
+  background-color: rgba(98, 0, 234, 0.1); }
+
+.moto-table .total th {
+  text-align: right; }
+
+.moto-table .total td {
+  color: #FF8300;
+  font-size: 1.1em; }
+
 @media (max-width: 991px) {
   .navbar-moto__primary li.nav-item a {
     color: #fff !important; }
