@@ -307,7 +307,6 @@ hr {
     z-index: 100;
     padding-top: 0;
     padding-bottom: 0;
-    height: 80px;
 
     .navbar-nav {
         .active > .nav-link {
@@ -393,6 +392,31 @@ hr {
             }
         }
     }
+
+    &__animate {
+        .logo-default {
+            display: block;
+        }
+
+        .logo-resize {
+            display: none;
+        }
+
+        &.resize {
+            .logo-default {
+                display: none;
+            }
+
+            .logo-resize {
+                display: block;
+                max-width: 160px;
+            }
+
+            .navbar-nav {
+                margin-top: 10px;
+            }
+        }
+    }
 }
 
 .resize.navbar {
@@ -419,17 +443,12 @@ hr {
         line-height: 40px;
         vertical-align: middle;
         text-align: center;
-        border: 2px solid #fff;
+        border: 0;
         border-radius: 0;
         color: #fff;
         background: transparent;
         font-size: 30px;
         cursor: pointer;
-
-        &:hover,
-        &:focus {
-            color: #fff;
-        }
     }
 }
 
@@ -468,7 +487,6 @@ body {
 
 #home {
     transition: margin-left .5s;
-    padding: 16px;
 }
 
 @media screen and (max-height: 450px) {
