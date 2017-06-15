@@ -784,3 +784,12 @@ button.btn {
 }
 
 
+.ribbon.ribbon-inline {
+    position: absolute;
+    right: -1.2em;
+    left: inherit;
+    z-index: 8;
+    -webkit-transform: inherit;
+            transform: inherit;
+}
+
