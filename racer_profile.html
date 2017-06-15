@@ -36,9 +36,11 @@ WARNING: Respond.js doesn't work if you view the page via file://
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <!--[endif]-->
+    <!-- www.fanduel.com -->
 </head>
 
 <body id="home" class="nav-top">
+<!--start navbar-->
 
 <section class="sub-navTop">
     <div class="container">
@@ -121,7 +123,7 @@ WARNING: Respond.js doesn't work if you view the page via file://
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-xs-12">
-                <div class="mt-card profile-border mb-20 wow zoomIn" data-wow-delay=".6s">
+                <div class="mt-card profile-border wow zoomIn" data-wow-delay=".6s">
                     <div class="mt-card__image">
                         <img src="assets/images/Portfolios/profile.jpg" alt="Profile Picture">
                         <div class="img-overlay">
@@ -134,16 +136,17 @@ WARNING: Respond.js doesn't work if you view the page via file://
                         <a href="#" class="mt-card__header display-block text-xs-center">
                             Jason Anderson | 21
                         </a>
-                        <div class="mt-card__description text-xs-center">
-                            Total FP: 41, 356
-                            <br>
-                            FPPC: 172.51
-                            <br>
-                            Rank: 2
-                        </div>
-
                         <div class="mt-card__subheader text-xs-center">
-                            United States
+                            Rockstar Energy Husqvana
+                            <br>
+                            Suppercross | Pro Motocross
+                        </div>
+                        <div class="mt-card__description text-xs-center">
+                            Manufacturer: Husqvarna
+                            <br>
+                            Class: 450
+                            <br>
+                            Country: United States
                         </div>
 
                         <div class="mt-20">
@@ -220,14 +223,13 @@ WARNING: Respond.js doesn't work if you view the page via file://
             <div class="col-lg-8 col-md-8 col-xs-12">
                 <div class="mt-card wow zoomIn" data-wow-delay=".6s">
                     <div class="profile-tab">
-                        <button class="tablinks" onclick="openTab(event, 'tabStats')" id="defaultTab">Stats</button>
-                        <button class="tablinks" onclick="openTab(event, 'tabContests')">Contests</button>
-                        <button class="tablinks" onclick="openTab(event, 'tabLeagues')">Leagues</button>
-                        <button class="tablinks" onclick="openTab(event, 'tabAccomplish')">Accomplishments</button>
-                        <button class="tablinks" onclick="openTab(event, 'tabSettings')">Settings</button>
+                        <button class="tablinks" onclick="openTab(event, 'tabOverall')" id="defaultTab">Overall</button>
+                        <button class="tablinks" onclick="openTab(event, 'tabSupercross')">Supercross</button>
+                        <button class="tablinks" onclick="openTab(event, 'tabMotocross')">Pro Motocross</button>
+                        <button class="tablinks" onclick="openTab(event, 'tabStatistics')">My Statistics</button>
                     </div>
 
-                    <div id="tabStats" class="tabcontent">
+                    <div id="tabOverall" class="tabcontent">
                         <div class="row">
                             <div class="col-md-12 col-xs-12">
                                 <div class="mt-card__heading">
@@ -235,76 +237,106 @@ WARNING: Respond.js doesn't work if you view the page via file://
                                     <span>Statistics</span>
                                 </div>
                                 <div class="mt-card__content side-pd-none">
-                                    <div class="table-responsive mt-20">
-                                        <table class="table table-bordered moto-table stripe">
-                                            <thead>
-                                                <tr>
-                                                    <th></th>
-                                                    <th>FP</th>
-                                                    <th>FPPC</th>
-                                                    <th>WINS</th>
-                                                    <th>LOSSES</th>
-                                                    <th>HIGH SCORE</th>
-                                                    <th>CHAMPIONSHIPS</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th>Supercross</th>
-                                                    <td>24,813</td>
-                                                    <td>182.44</td>
-                                                    <td>26</td>
-                                                    <td>11</td>
-                                                    <td>301</td>
-                                                    <td>4</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Pro Motocross</th>
-                                                    <td>6,203</td>
-                                                    <td>172.31</td>
-                                                    <td>14</td>
-                                                    <td>3</td>
-                                                    <td>256</td>
-                                                    <td>1</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>MotoGP</th>
-                                                    <td>4,135</td>
-                                                    <td>133.23</td>
-                                                    <td>16</td>
-                                                    <td>13</td>
-                                                    <td>212</td>
-                                                    <td>0</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>IndyCar</th>
-                                                    <td>4,135</td>
-                                                    <td>180.20</td>
-                                                    <td>10</td>
-                                                    <td>1</td>
-                                                    <td>222</td>
-                                                    <td>2</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>NASCAR</th>
-                                                    <td>2,067</td>
-                                                    <td>117.2</td>
-                                                    <td>3</td>
-                                                    <td>7</td>
-                                                    <td>165</td>
-                                                    <td>1</td>
-                                                </tr>
-                                                <tr class="total">
-                                                    <th>TOTALS</th>
-                                                    <td>41,356</td>
-                                                    <td>172.51</td>
-                                                    <td>69</td>
-                                                    <td>35</td>
-                                                    <td>301</td>
-                                                    <td>8</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                    <div class="row">
+                                        <div class="col-md-6 col-xs-6 border-right">
+                                            <div class="list">
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">52.75</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>FPPR:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">76%</span>
+                                                    <i class="icon ion-stop normal"></i>
+                                                    <span>Play Rate:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">100K</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Total FP:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">10,954</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Total PP:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">7.91</span>
+                                                    <i class="icon ion-stop normal"></i>
+                                                    <span>PPPR:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">89K</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Total AP:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">18.8</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>APPR:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">4.5</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Avg Finish:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">5.6</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Avg SP:</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-xs-6">
+                                            <div class="list">
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">1.1</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>AVG +/-:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">1st</span>
+                                                    <i class="icon ion-stop normal"></i>
+                                                    <span>Best Finish:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">14</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Race Wins:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">6</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Moto Wins:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">4</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Heat Wins:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">7</span>
+                                                    <i class="icon ion-stop danger"></i>
+                                                    <span>Semi Wins:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">2</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>LCQ Wins:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">33</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Holeshots:</span>
+                                                </div>
+                                                <div class="item-group">
+                                                    <span class="float-sm-right text-bold">301</span>
+                                                    <i class="icon ion-stop success"></i>
+                                                    <span>Laps Led:</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -395,25 +427,19 @@ WARNING: Respond.js doesn't work if you view the page via file://
                         </div>
                     </div>
 
-                    <div id="tabContests" class="tabcontent">
+                    <div id="tabSupercross" class="tabcontent">
                         <div class="mt-card__content">
                             
                         </div>
                     </div>
 
-                    <div id="tabLeagues" class="tabcontent">
+                    <div id="tabMotocross" class="tabcontent">
                         <div class="mt-card__content">
                             
                         </div>
                     </div>
 
-                    <div id="tabAccomplish" class="tabcontent">
-                        <div class="mt-card__content">
-                            
-                        </div>
-                    </div>
-
-                    <div id="tabSettings" class="tabcontent">
+                    <div id="tabStatistics" class="tabcontent">
                         <div class="mt-card__content">
                             
                         </div>
@@ -437,11 +463,11 @@ WARNING: Respond.js doesn't work if you view the page via file://
             </ul>
         </div>
         <p class="copyright">
-            <span> © 2017 MotoDynasty. Trademarks and brands are the property of their respective owners.
-            </span>
-            <span>
-             Address: Business road 123, Ashborton Grove, Emirates, London 12345 All rights reserved.
-            </span>
+               <span> © 2017 MotoDynasty. Trademarks and brands are the property of their respective owners.
+                </span>
+                <span>
+                 Address: Business road 123, Ashborton Grove, Emirates, London 12345 All rights reserved.
+                </span>
         </p>
     </div>
 </section>
@@ -496,3 +522,4 @@ WARNING: Respond.js doesn't work if you view the page via file://
 
 </body>
 </html>
+
