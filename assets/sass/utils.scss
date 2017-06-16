@@ -2,6 +2,9 @@ $primary: #6200ea;
 $secondary: #FF8300;
 $grey: #5D5D5D;
 
+$font-normal: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+
 .moto-container {
     margin-left: auto;
     margin-right: auto;
@@ -61,6 +64,10 @@ $grey: #5D5D5D;
 
 .text-bold {
     font-weight: bold;
+}
+
+.text-white {
+    color: #fff;
 }
 
 .color-secondary {
@@ -179,6 +186,29 @@ div.profile-tab {
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+.tab-with-intro {
+    padding-left: 0 !important;
+    min-width: 200px;
+    text-align: left;
+
+    > span {
+        display: block;
+    }
+
+    .tab-title {
+        font-size: 1em;
+        font-family: $font-normal;
+    }
+
+    .tab-intro {
+        font-size: 0.8em;
+        font-family: Raleway;
+        font-weight: normal;
+        color: $grey;
+        text-transform: none;
+    }
 }
 
 .side-pd-none {
@@ -587,6 +617,8 @@ body {
     font-weight: bold;
     background-color: $secondary;
     border-color: rgba(255, 131, 00, 0.5);
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
 
     &:hover,
     &:focus {
@@ -801,5 +833,9 @@ button.btn {
     z-index: 8;
     -webkit-transform: inherit;
             transform: inherit;
+}
+
+.card-primary {
+    background-color: $grey;
 }
 

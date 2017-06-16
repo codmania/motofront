@@ -347,6 +347,25 @@ thead.mt-thead tr th {
   color: #FF8300;
   font-size: 1.1em; }
 
+.moto-play-card {
+  padding: 15px;
+  box-shadow: 0px 0px 3px 1px #d4d4d5; }
+  .moto-play-card .signup-free {
+    font-size: 0.8em;
+    color: #eee;
+    font-family: Raleway; }
+  .moto-play-card .btn-attach {
+    background-color: #FF8300;
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 2px;
+    padding: 5px;
+    font-weight: normal; }
+  .moto-play-card .btn-transparent {
+    border: 2px solid #fff;
+    background-color: transparent;
+    font-size: 0.9em; }
+
 @media (max-width: 991px) {
   .navbar-moto__primary li.nav-item a {
     color: #fff !important; }

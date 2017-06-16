@@ -149,111 +149,147 @@ WARNING: Respond.js doesn't work if you view the page via file://
                         <div id="tabSupercross" class="tabcontent">
                             <div class="row">
                                 <div class="inline-tab">
-                                    <button class="tab-sublinks text-capital" onclick="openSubTab(event, 'tabSupercross_featured')" id="defaultSubTab">Featured</button>
-                                    <button class="tab-sublinks text-capital" onclick="openSubTab(event, 'tabSupercross_group')">Group Contests</button>
-                                    <button class="tab-sublinks" onclick="openSubTab(event, 'tabSupercross_head')">Head to Heads</button>
-                                    <button class="tab-sublinks" onclick="openSubTab(event, 'tabSupercross_beginner')">Beginner Contests</button>
+                                    <button class="tab-sublinks tab-with-intro text-capital" onclick="openSubTab(event, 'tabSupercross_featured')" id="defaultSubTab">
+                                        <span class="tab-title">Featured</span>
+                                    </button>
+                                    <button class="tab-sublinks tab-with-intro text-capital" onclick="openSubTab(event, 'tabSupercross_group')">
+                                        <span class="tab-title">Group Contests</span>
+                                    </button>
+                                    <button class="tab-sublinks tab-with-intro text-capital" onclick="openSubTab(event, 'tabSupercross_head')">
+                                        <span class="tab-title">Head to Heads</span>
+                                    </button>
+                                    <button class="tab-sublinks tab-with-intro text-capital" onclick="openSubTab(event, 'tabSupercross_beginner')">
+                                        <span class="tab-title">Beginner Contests</span>
+                                    </button>
                                 </div>
 
-                                <div id="tabSupercross_featured" class="tab-subcontent">
-                                    <div class="table-responsive mt-20">
-                                        <table class="table table-bordered mt-border">
-                                            <thead class="mt-thead">
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>Name</th>
-                                                    <th>Class</th>
-                                                    <th>Prediction</th>
-                                                    <th>Race Finish</th>
-                                                    <th>Accurancy Pts</th>
-                                                    <th>+/-</th>
-                                                    <th>Moto Win</th>
-                                                    <th>Holeshot</th>
-                                                    <th>Laps Led</th>
-                                                    <th>Total</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Copper Webb</td>
-                                                    <td>450</td>
-                                                    <td>3</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Copper Webb</td>
-                                                    <td>450</td>
-                                                    <td>3</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Copper Webb</td>
-                                                    <td>450</td>
-                                                    <td>3</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Copper Webb</td>
-                                                    <td>450</td>
-                                                    <td>3</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Copper Webb</td>
-                                                    <td>450</td>
-                                                    <td>3</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Copper Webb</td>
-                                                    <td>450</td>
-                                                    <td>3</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                <div id="tabSupercross_featured" class="tab-subcontent side-pd-none">
+                                    <div class="row">
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="moto-play-card card-primary mt-20 wow zoomIn" data-wow-delay=".6s">
+                                                <img src="assets/images/logo_resize.png" alt="Logo White" style="width:50%;">
+                                                <h5 class="text-white">
+                                                    PLAY <br>
+                                                    FANTASY MOTO RACING
+                                                </h5>
+                                                <a href="#" class="signup-free">Sign up for <strong>FREE</strong></a>
+                                                <div class="mt-10">
+                                                    <button class="btn btn-attach">Crate a League</button>
+                                                    <button class="btn btn-attach">Draft a Team Now</button>
+                                                    <button class="btn btn-attach">Draft a Team Later</button>
+                                                </div>
+                                                <center class="mt-20">
+                                                    <span href="" class="signup-free">want some practice? Try a mock draft</span>
+                                                </center>
+                                                <div class="">
+                                                    <button class="btn btn-attach btn-transparent">Mock Draft Now</button>
+                                                </div>
+                                            </div>
+                                            <div class="moto-play-card mt-20 wow zoomIn" data-wow-delay=".6s">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-xs-12">
+                                            <div class="table-responsive mt-20">
+                                                <table class="table table-bordered mt-border">
+                                                    <thead class="mt-thead">
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>Name</th>
+                                                            <th>Class</th>
+                                                            <th>Prediction</th>
+                                                            <th>Race Finish</th>
+                                                            <th>Accurancy Pts</th>
+                                                            <th>+/-</th>
+                                                            <th>Moto Win</th>
+                                                            <th>Holeshot</th>
+                                                            <th>Laps Led</th>
+                                                            <th>Total</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Copper Webb</td>
+                                                            <td>450</td>
+                                                            <td>3</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Copper Webb</td>
+                                                            <td>450</td>
+                                                            <td>3</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Copper Webb</td>
+                                                            <td>450</td>
+                                                            <td>3</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Copper Webb</td>
+                                                            <td>450</td>
+                                                            <td>3</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Copper Webb</td>
+                                                            <td>450</td>
+                                                            <td>3</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Copper Webb</td>
+                                                            <td>450</td>
+                                                            <td>3</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
