@@ -365,6 +365,13 @@ thead.mt-thead tr th {
     border: 2px solid #fff;
     background-color: transparent;
     font-size: 0.9em; }
+  .moto-play-card__footer {
+    margin-bottom: -15px;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .moto-play-card .full-width {
+    margin-left: -15px;
+    margin-right: -15px; }
 
 @media (max-width: 991px) {
   .navbar-moto__primary li.nav-item a {

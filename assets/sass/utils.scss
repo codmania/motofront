@@ -839,3 +839,76 @@ button.btn {
     background-color: $grey;
 }
 
+
+.bg-white {
+    background-color: #fff;
+}
+
+.static-list {
+    list-style-type: none;
+
+    .item-group {
+        display: block;
+        padding: 0;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            height: 15px;
+            display: block;
+            clear: both;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        span.number {
+            padding: 0;
+            margin: 0;
+            width: 3em;
+            height: 3em;
+            font-size: 1em;
+            vertical-align: middle;
+            text-align: center;
+            line-height: 3em;
+            color: #fff;
+            font-weight: bold;
+            display: block;
+            float: left;
+            background-color: $secondary;
+        }
+
+        span.item-content {
+            display: block;
+            float: left;
+            position: relative;
+            width: calc(100% - 6em);
+            font-size: 1em;
+            line-height: 1.5em;
+            background-color: $grey;
+            color: #fff;
+            font-family: $font-normal;
+            padding: 0 5px;
+
+            span {
+                font-size: 0.9em;
+            }
+        }
+
+        img {
+            display: block;
+            float: left;
+            width: 3em;
+            height: 3em;
+        }
+    }
+
+    .item-group:last-child {
+        &::after {
+            content: '';
+            height: 20px;
+            display: block;
+            clear: both;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
