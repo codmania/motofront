@@ -37,7 +37,7 @@
   color: #5D5D5D; }
 
 .text-meta {
-  color: #999; }
+  color: #999 !important; }
 
 .text-capital {
   text-transform: uppercase; }
@@ -47,6 +47,12 @@
 
 .text-white {
   color: #fff; }
+
+.text-sm {
+  font-size: 0.9em !important; }
+
+.text-xs {
+  font-size: 0.7em !important; }
 
 .color-secondary {
   color: #FF8300 !important; }
@@ -86,6 +92,16 @@ button:focus {
   border-radius: 0;
   background-color: #eee;
   color: #5D5D5D; }
+
+.btn-primary {
+  background-color: #6200ea;
+  color: #fff;
+  font-weight: bold; }
+
+.btn-alter {
+  background-color: #FF8300;
+  color: #fff;
+  font-weight: bold; }
 
 /* Style the tab */
 div.profile-tab {
@@ -439,8 +455,8 @@ body {
   font-weight: bold;
   background-color: #FF8300;
   border-color: rgba(255, 131, 0, 0.5);
-  border-bottom-left-radius: 2px;
-  border-top-left-radius: 2px; }
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px; }
   .ribbon:hover, .ribbon:focus {
     color: #fff; }
   .ribbon::after {
@@ -466,6 +482,13 @@ body {
       border-width: 1.2em 1.2em 0 0;
       border-color: transparent;
       border-top-color: inherit; }
+  .ribbon .ribbon-time {
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    display: block; }
+  .ribbon .ribbon-title {
+    font-size: 0.8em; }
 
 .mt-card .table td, .mt-card .table th {
   vertical-align: middle; }
@@ -499,6 +522,9 @@ body {
 .danger {
   color: #d9534f; }
 
+.secondary {
+  color: #FF8300; }
+
 .btn-remove {
   margin: 0;
   padding: 0;
@@ -527,7 +553,7 @@ input.input-primary {
     outline: none; }
 
 button.btn {
-  border-radius: 0;
+  border-radius: 3px;
   transition: all 0.4s ease-in-out 0s; }
 
 .btn-pending {
@@ -629,7 +655,7 @@ button.btn {
     .static-list .item-group span.number {
       padding: 0;
       margin: 0;
-      width: 3em;
+      width: 2.5em;
       height: 3em;
       font-size: 1em;
       vertical-align: middle;
@@ -644,7 +670,7 @@ button.btn {
       display: block;
       float: left;
       position: relative;
-      width: calc(100% - 6em);
+      width: calc(100% - 5.5em);
       font-size: 1em;
       line-height: 1.5em;
       background-color: #5D5D5D;

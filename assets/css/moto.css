@@ -313,9 +313,9 @@ thead.mt-thead tr th {
   display: inline-block; }
 
 .moto-table thead tr {
-  background-color: rgba(98, 0, 234, 0.8); }
+  background-color: rgba(93, 93, 93, 0.4); }
   .moto-table thead tr th {
-    color: #fff;
+    color: #555;
     font-weight: bold;
     text-align: center; }
 
@@ -333,9 +333,7 @@ thead.mt-thead tr th {
   transition: all 0.2s ease-in-out 0s; }
 
 .moto-table tbody tr:hover {
-  background-color: rgba(98, 0, 234, 0.5) !important; }
-  .moto-table tbody tr:hover td {
-    color: #fff; }
+  background-color: rgba(98, 93, 93, 0.2) !important; }
 
 .moto-table.stripe > tbody > tr:nth-of-type(odd):not(.moto-table__total) {
   background-color: rgba(98, 0, 234, 0.1); }
@@ -365,6 +363,9 @@ thead.mt-thead tr th {
     border: 2px solid #fff;
     background-color: transparent;
     font-size: 0.9em; }
+  .moto-play-card__head {
+    margin-top: -15px;
+    padding: 5px 0; }
   .moto-play-card__footer {
     margin-bottom: -15px;
     padding-top: 5px;
@@ -372,6 +373,49 @@ thead.mt-thead tr th {
   .moto-play-card .full-width {
     margin-left: -15px;
     margin-right: -15px; }
+
+.table-contests .col-contests {
+  min-width: 400px;
+  text-align: left; }
+  .table-contests .col-contests__mark {
+    display: inline-block;
+    vertical-align: middle; }
+  .table-contests .col-contests__cont {
+    color: rgba(98, 0, 234, 0.7); }
+    .table-contests .col-contests__cont i.ion-android-bookmark {
+      font-size: 2em;
+      color: rgba(98, 0, 234, 0.5);
+      margin-right: 7px; }
+
+.table-contests i.icon {
+  vertical-align: middle; }
+
+.table-contests .color-odd {
+  color: rgba(98, 0, 234, 0.7); }
+
+.table-contests thead tr th {
+  font-size: 0.9em; }
+  .table-contests thead tr th .intro {
+    font-size: 0.7em;
+    font-weight: bold;
+    vertical-align: middle;
+    color: #fff;
+    margin-left: 10px; }
+    .table-contests thead tr th .intro i.ion-record {
+      font-size: 0.8em;
+      vertical-align: middle; }
+
+.table-contests tbody tr td {
+  padding: 0 0.75em;
+  color: #5D5D5D; }
+  .table-contests tbody tr td .ion-record {
+    font-size: 0.5em;
+    vertical-align: middle;
+    line-height: 1em;
+    display: block;
+    margin-right: 7px; }
+  .table-contests tbody tr td button {
+    width: 100%; }
 
 @media (max-width: 991px) {
   .navbar-moto__primary li.nav-item a {

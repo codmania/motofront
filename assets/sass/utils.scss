@@ -55,7 +55,7 @@ $font-normal: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .text-meta {
-    color: #999;
+    color: #999 !important;
 }
 
 .text-capital {
@@ -68,6 +68,14 @@ $font-normal: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
 .text-white {
     color: #fff;
+}
+
+.text-sm {
+    font-size: 0.9em !important;
+}
+
+.text-xs {
+    font-size: 0.7em !important;
 }
 
 .color-secondary {
@@ -123,6 +131,17 @@ button {
     color: $grey;
 }
 
+.btn-primary {
+    background-color: $primary;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-alter {
+    background-color: $secondary;
+    color: #fff;
+    font-weight: bold;
+}
 
 /* Style the tab */
 div.profile-tab {
@@ -617,8 +636,8 @@ body {
     font-weight: bold;
     background-color: $secondary;
     border-color: rgba(255, 131, 00, 0.5);
-    border-bottom-left-radius: 2px;
-    border-top-left-radius: 2px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
 
     &:hover,
     &:focus {
@@ -652,6 +671,17 @@ body {
             border-color: transparent;
             border-top-color: inherit;
         }
+    }
+
+    .ribbon-time {
+        font-family: $font-normal;
+        font-weight: bold;
+        font-size: 1.5em;
+        display: block;
+    }
+
+    .ribbon-title {
+        font-size: 0.8em;
     }
 }
 
@@ -698,6 +728,10 @@ body {
     color: #d9534f;
 }
 
+.secondary {
+    color: $secondary;
+}
+
 .btn-remove {
     margin: 0;
     padding: 0;
@@ -732,7 +766,7 @@ input.input-primary {
 }
 
 button.btn {
-    border-radius: 0;
+    border-radius: 3px;
     transition: all 0.4s ease-in-out 0s;
 }
 
@@ -863,7 +897,7 @@ button.btn {
         span.number {
             padding: 0;
             margin: 0;
-            width: 3em;
+            width: 2.5em;
             height: 3em;
             font-size: 1em;
             vertical-align: middle;
@@ -880,7 +914,7 @@ button.btn {
             display: block;
             float: left;
             position: relative;
-            width: calc(100% - 6em);
+            width: calc(100% - 5.5em);
             font-size: 1em;
             line-height: 1.5em;
             background-color: $grey;

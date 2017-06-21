@@ -135,7 +135,8 @@ WARNING: Respond.js doesn't work if you view the page via file://
                 <div class="mt-card wow zoomIn" data-wow-delay=".6s">
                     <div class="mt-card__content">
                         <a href="#" class="ribbon right">
-                            Contests
+                            <span class="ribbon-time">17:14:59</span>
+                            <span class="ribbon-title">Next Contests</span>
                         </a>
 
                         <div class="profile-tab mt-10">
@@ -251,104 +252,285 @@ WARNING: Respond.js doesn't work if you view the page via file://
                                             </div>
                                         </div>
                                         <div class="col-md-9 col-xs-12">
-                                            <div class="table-responsive mt-20">
-                                                <table class="table table-bordered mt-border">
-                                                    <thead class="mt-thead">
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Name</th>
-                                                            <th>Class</th>
-                                                            <th>Prediction</th>
-                                                            <th>Race Finish</th>
-                                                            <th>Accurancy Pts</th>
-                                                            <th>+/-</th>
-                                                            <th>Moto Win</th>
-                                                            <th>Holeshot</th>
-                                                            <th>Laps Led</th>
-                                                            <th>Total</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Copper Webb</td>
-                                                            <td>450</td>
-                                                            <td>3</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Copper Webb</td>
-                                                            <td>450</td>
-                                                            <td>3</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Copper Webb</td>
-                                                            <td>450</td>
-                                                            <td>3</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Copper Webb</td>
-                                                            <td>450</td>
-                                                            <td>3</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Copper Webb</td>
-                                                            <td>450</td>
-                                                            <td>3</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Copper Webb</td>
-                                                            <td>450</td>
-                                                            <td>3</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                            <td>0</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                            <div class="wow zoomIn" data-wow-delay=".6s">
+                                                <div class="table-search-input input-group mt-20">
+                                                    <input type="text" class="form-control" placeholder="Search..." id="searchInput" onkeyup="tableSearch()">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-secondary" type="button">
+                                                            <i class="icon ion-ios-search"></i>
+                                                        </button>
+                                                    </span>
+                                                </div>
+
+                                                <div class="table-responsive mt-20">
+                                                    <table class="table table-striped table-contests moto-table" id="searchTable">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="text-capital col-contests">
+                                                                    contests
+                                                                    <span class="intro">
+                                                                        <i class="icon ion-record normal"></i>
+                                                                        guranteed
+                                                                    </span>
+                                                                    <span class="intro">
+                                                                        <i class="icon ion-record secondary"></i>
+                                                                        multi-entry
+                                                                    </span>
+                                                                </th>
+                                                                <th class="text-capital">Enters / Size</th>
+                                                                <th class="text-capital">Entry</th>
+                                                                <th class="text-capital">Prizes</th>
+                                                                <th class="text-capital">Starts(ET)</th>
+                                                                <th class="text-capital text-xs">
+                                                                    <i class="icon ion-ios-checkmark-outline"></i>
+                                                                    Entered
+                                                                </th>
+                                                                <th class="text-capital text-xs">
+                                                                    <i class="icon ion-flash"></i>
+                                                                    Lineup Available
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="col-contests">
+                                                                    <span class="col-contests__mark">
+                                                                        <i class="icon ion-record normal"></i>
+                                                                        <i class="icon ion-record secondary"></i>
+                                                                    </span>
+                                                                    <span class="col-contests__cont">
+                                                                        <i class="icon ion-android-bookmark secondary"></i>
+                                                                        Racer X Fantasy Supercross Challenge
+                                                                    </span>
+                                                                </td>
+                                                                <td class="color-odd">10,313</td>
+                                                                <td>$300</td>
+                                                                <td class="color-odd">Yes</td>
+                                                                <td class="text-sm text-meta">7:10pm</td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <button class="btn btn-alter">ENTER</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="col-contests">
+                                                                    <span class="col-contests__mark">
+                                                                        <i class="icon ion-record normal"></i>
+                                                                        <i class="icon ion-record secondary"></i>
+                                                                    </span>
+                                                                    <span class="col-contests__cont">
+                                                                        <i class="icon ion-android-bookmark secondary"></i>
+                                                                        Racer X Fantasy Supercross Challenge
+                                                                    </span>
+                                                                </td>
+                                                                <td class="color-odd">10,313</td>
+                                                                <td>$300</td>
+                                                                <td class="color-odd">Yes</td>
+                                                                <td class="text-sm text-meta">7:10pm</td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <button class="btn btn-alter">ENTER</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="col-contests">
+                                                                    <span class="col-contests__mark">
+                                                                        <i class="icon ion-record normal"></i>
+                                                                        <i class="icon ion-record secondary"></i>
+                                                                    </span>
+                                                                    <span class="col-contests__cont">
+                                                                        <i class="icon ion-android-bookmark secondary"></i>
+                                                                        Racer X Fantasy Supercross Challenge
+                                                                    </span>
+                                                                </td>
+                                                                <td class="color-odd">10,313</td>
+                                                                <td>$300</td>
+                                                                <td class="color-odd">Yes</td>
+                                                                <td class="text-sm text-meta">7:10pm</td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <button class="btn btn-alter">ENTER</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="col-contests">
+                                                                    <span class="col-contests__mark">
+                                                                        <i class="icon ion-record normal"></i>
+                                                                    </span>
+                                                                    <span class="col-contests__cont">
+                                                                        <i class="icon ion-android-bookmark secondary"></i>
+                                                                        DMXS Radio Show Series
+                                                                    </span>
+                                                                </td>
+                                                                <td class="color-odd">1738 / 38535</td>
+                                                                <td>FREE</td>
+                                                                <td class="color-odd">No</td>
+                                                                <td class="text-sm text-meta">7:10pm</td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <button class="btn btn-alter">ENTER</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="col-contests">
+                                                                    <span class="col-contests__mark">
+                                                                        <i class="icon ion-record normal"></i>
+                                                                        <i class="icon ion-record secondary"></i>
+                                                                    </span>
+                                                                    <span class="col-contests__cont">
+                                                                        <i class="icon ion-android-bookmark secondary"></i>
+                                                                        Racer X Fantasy Supercross Challenge
+                                                                    </span>
+                                                                </td>
+                                                                <td class="color-odd">10,313</td>
+                                                                <td>$300</td>
+                                                                <td class="color-odd">Yes</td>
+                                                                <td class="text-sm text-meta">7:10pm</td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <button class="btn btn-alter">ENTER</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="col-contests">
+                                                                    <span class="col-contests__mark">
+                                                                        <i class="icon ion-record normal"></i>
+                                                                    </span>
+                                                                    <span class="col-contests__cont">
+                                                                        <i class="icon ion-android-bookmark secondary"></i>
+                                                                        Yamaha Cup
+                                                                    </span>
+                                                                </td>
+                                                                <td class="color-odd">0 / 40</td>
+                                                                <td>$1065</td>
+                                                                <td class="color-odd">$100,000</td>
+                                                                <td class="text-sm text-meta">7:10pm</td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <button class="btn btn-alter">ENTER</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="col-contests">
+                                                                    <span class="col-contests__mark">
+                                                                        <i class="icon ion-record normal"></i>
+                                                                        <i class="icon ion-record secondary"></i>
+                                                                    </span>
+                                                                    <span class="col-contests__cont">
+                                                                        <i class="icon ion-android-bookmark secondary"></i>
+                                                                        Racer X Fantasy Supercross Challenge
+                                                                    </span>
+                                                                </td>
+                                                                <td class="color-odd">10,313</td>
+                                                                <td>$300</td>
+                                                                <td class="color-odd">Yes</td>
+                                                                <td class="text-sm text-meta">7:10pm</td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <button class="btn btn-alter">ENTER</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="col-contests">
+                                                                    <span class="col-contests__mark">
+                                                                        <i class="icon ion-record normal"></i>
+                                                                        <i class="icon ion-record secondary"></i>
+                                                                    </span>
+                                                                    <span class="col-contests__cont">
+                                                                        <i class="icon ion-android-bookmark secondary"></i>
+                                                                        Racer X Fantasy Supercross Challenge
+                                                                    </span>
+                                                                </td>
+                                                                <td class="color-odd">10,313</td>
+                                                                <td>$300</td>
+                                                                <td class="color-odd">Yes</td>
+                                                                <td class="text-sm text-meta">7:10pm</td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <button class="btn btn-alter">ENTER</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="col-contests">
+                                                                    <span class="col-contests__mark">
+                                                                        <i class="icon ion-record normal"></i>
+                                                                        <i class="icon ion-record secondary"></i>
+                                                                    </span>
+                                                                    <span class="col-contests__cont">
+                                                                        <i class="icon ion-android-bookmark secondary"></i>
+                                                                        Racer X Fantasy Supercross Challenge
+                                                                    </span>
+                                                                </td>
+                                                                <td class="color-odd">10,313</td>
+                                                                <td>$300</td>
+                                                                <td class="color-odd">Yes</td>
+                                                                <td class="text-sm text-meta">7:10pm</td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <button class="btn btn-alter">ENTER</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="col-contests">
+                                                                    <span class="col-contests__mark">
+                                                                        <i class="icon ion-record normal"></i>
+                                                                    </span>
+                                                                    <span class="col-contests__cont">
+                                                                        <i class="icon ion-android-bookmark secondary"></i>
+                                                                        DMXS Radio Show Series
+                                                                    </span>
+                                                                </td>
+                                                                <td class="color-odd">1738 / 38535</td>
+                                                                <td>FREE</td>
+                                                                <td class="color-odd">No</td>
+                                                                <td class="text-sm text-meta">7:10pm</td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <button class="btn btn-alter">ENTER</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="col-contests">
+                                                                    <span class="col-contests__mark">
+                                                                        <i class="icon ion-record normal"></i>
+                                                                        <i class="icon ion-record secondary"></i>
+                                                                    </span>
+                                                                    <span class="col-contests__cont">
+                                                                        <i class="icon ion-android-bookmark secondary"></i>
+                                                                        Racer X Fantasy Supercross Challenge
+                                                                    </span>
+                                                                </td>
+                                                                <td class="color-odd">10,313</td>
+                                                                <td>$300</td>
+                                                                <td class="color-odd">Yes</td>
+                                                                <td class="text-sm text-meta">7:10pm</td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <button class="btn btn-alter">ENTER</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="col-contests">
+                                                                    <span class="col-contests__mark">
+                                                                        <i class="icon ion-record normal"></i>
+                                                                    </span>
+                                                                    <span class="col-contests__cont">
+                                                                        <i class="icon ion-android-bookmark secondary"></i>
+                                                                        Yamaha Cup
+                                                                    </span>
+                                                                </td>
+                                                                <td class="color-odd">0 / 40</td>
+                                                                <td>$1065</td>
+                                                                <td class="color-odd">$100,000</td>
+                                                                <td class="text-sm text-meta">7:10pm</td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <button class="btn btn-alter">ENTER</button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
