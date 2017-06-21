@@ -673,6 +673,11 @@ body {
         }
     }
 
+    &.ribbon-alter {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
     .ribbon-time {
         font-family: $font-normal;
         font-weight: bold;

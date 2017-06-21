@@ -482,6 +482,9 @@ body {
       border-width: 1.2em 1.2em 0 0;
       border-color: transparent;
       border-top-color: inherit; }
+  .ribbon.ribbon-alter {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; }
   .ribbon .ribbon-time {
     font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: bold;
