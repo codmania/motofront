@@ -1,0 +1,21 @@
+{
+  "name": "motodynasty",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "golden <goldensoftdev@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/triton-gitworld/motofront",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.countdown": "^2.2.0",
+    "underscore": "^1.8.3"
+  }
+}

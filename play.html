@@ -38,14 +38,34 @@ WARNING: Respond.js doesn't work if you view the page via file://
     <!--[endif]-->
 </head>
 
-<body id="home" class="top-fixed-navbar">
-<!--start navbar-->
-<nav class="navbar navbar-fixed-top navbar-light">
+<body id="home" class="nav-top">
+
+<section class="sub-navTop">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="social">
+                    <ul class="list-unstyled">
+                        <li><a href=""><i class="icon ion-social-facebook"></i></a></li>
+                        <li><a href=""><i class="icon ion-social-twitter"></i></a></li>
+                        <li><a href=""><i class="icon ion-social-googleplus"></i></a></li>
+                        <li><a href=""><i class="icon ion-social-youtube-outline"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<nav class="navbar navbar-fixed-top navbar-light navbar-moto__animate">
     <div class="container">
         <button class="navbar-toggler hidden-lg-up" type="button" aria-label="Toggle navigation" onclick="openSideNav()">
             <i class="icon ion-navicon-round"></i>
         </button>
-        <img class="navbar-brand" src="assets/images/logo.png" alt="">
+        <a href="#">
+            <img class="navbar-brand logo-default" src="assets/images/logo.png" alt="Default Logo">
+            <img class="navbar-brand logo-resize" src="assets/images/logo_resize.png" alt="Resize Logo">
+        </a>
 
         <div class="collapse navbar-toggleable-md" id="navbarResponsive">
             <ul class="nav navbar-nav float-lg-right">
@@ -100,6 +120,16 @@ WARNING: Respond.js doesn't work if you view the page via file://
 <section class="pt-150 mb-100">
     <div class="container">
         <div class="row">
+            <center class="title wow zoomIn" data-wow-delay=".6s">
+                <h2 class="h1">MXGP LEON TEST</h2>
+
+                <div class="hex">
+                    <span>&#x2B22;</span>
+                </div>
+
+                <div class="countdown-container" id="countdownTimer"></div>
+            </center>
+
             <div class="col-lg-6 col-md-6 col-xs-12">
                 <div class="mt-card wow zoomIn" data-wow-delay=".6s">
                     <div class="mt-card__content">
@@ -425,6 +455,11 @@ WARNING: Respond.js doesn't work if you view the page via file://
 <!-- ========== Javascript ========== -->
 <!-- jquery v2.1.4-->
 <script type="text/javascript" src="assets/js/jquery.2.1.4.min.js"></script>
+
+<!-- jquery plugins -->
+<script src="assets/js/underscore/underscore-min.js"></script>
+<script src="assets/js/jquery.countdown/dist/jquery.countdown.js"></script>
+
 <!-- Bootstrap v4.0.0-alpha.5-->
 <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
@@ -444,6 +479,84 @@ WARNING: Respond.js doesn't work if you view the page via file://
 <script type="text/javascript" src="assets/js/custom.js"></script>
 
 <script type="text/javascript" src="assets/js/profile.js"></script>
+
+<script type="text/template" id="timer-template">
+    <div class="time <%= label %>">
+      <span class="count curr top"><%= curr %></span>
+      <span class="count next top"><%= next %></span>
+      <span class="count next bottom"><%= next %></span>
+      <span class="count curr bottom"><%= curr %></span>
+      <span class="label"><%= label.length < 6 ? label : label.substr(0, 3)  %></span>
+    </div>
+</script>
+
+<script type="text/javascript">
+  $(window).on('load', function() {
+    var labels = ['weeks', 'days', 'hours', 'minutes', 'seconds'],
+      nextYear = (new Date().getFullYear() + 1) + '/01/01',
+      template = _.template($('#timer-template').html()),
+      currDate = '00:00:00:00:00',
+      nextDate = '00:00:00:00:00',
+      parser = /([0-9]{2})/gi,
+      $timer = $('#countdownTimer');
+    // Parse countdown string to an object
+    function strfobj(str) {
+      var parsed = str.match(parser),
+        obj = {};
+      labels.forEach(function(label, i) {
+        obj[label] = parsed[i]
+      });
+      return obj;
+    }
+    // Return the time components that diffs
+    function diff(obj1, obj2) {
+      var diff = [];
+      labels.forEach(function(key) {
+        if (obj1[key] !== obj2[key]) {
+          diff.push(key);
+        }
+      });
+      return diff;
+    }
+    // Build the layout
+    var initData = strfobj(currDate);
+    labels.forEach(function(label, i) {
+      $timer.append(template({
+        curr: initData[label],
+        next: initData[label],
+        label: label
+      }));
+    });
+    // Starts the countdown
+    $timer.countdown(nextYear, function(event) {
+      var newDate = event.strftime('%w:%d:%H:%M:%S'),
+        data;
+      if (newDate !== nextDate) {
+        currDate = nextDate;
+        nextDate = newDate;
+        // Setup the data
+        data = {
+          'curr': strfobj(currDate),
+          'next': strfobj(nextDate)
+        };
+        // Apply the new values to each node that changed
+        diff(data.curr, data.next).forEach(function(label) {
+          var selector = '.%s'.replace(/%s/, label),
+              $node = $timer.find(selector);
+          // Update the node
+          $node.removeClass('flip');
+          $node.find('.curr').text(data.curr[label]);
+          $node.find('.next').text(data.next[label]);
+          // Wait for a repaint to then flip
+          _.delay(function($node) {
+            $node.addClass('flip');
+          }, 50, $node);
+        });
+      }
+    });
+  });
+
+</script>
 
 </body>
 </html>
