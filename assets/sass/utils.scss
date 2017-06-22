@@ -1004,6 +1004,7 @@ button.btn {
         -o-transform: rotateX(0deg);
         transform: rotateX(0deg);
         z-index: 3;
+        line-height: 96px;
     }
 
     .count.top {
@@ -1016,6 +1017,7 @@ button.btn {
         -ms-transform-origin: 50% 100%;
         -o-transform-origin: 50% 100%;
         transform-origin: 50% 100%;
+        line-height: 96px;
     }
 
     .count {
@@ -1104,5 +1106,10 @@ button.btn {
         top: 95px;
         width: 100%;
     }
+}
+
+.counttimer-container {
+    margin: 0 auto;
+    width: 500px;
 }
 

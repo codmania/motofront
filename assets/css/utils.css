@@ -741,7 +741,8 @@ button.btn {
     -ms-transform: rotateX(0deg);
     -o-transform: rotateX(0deg);
     transform: rotateX(0deg);
-    z-index: 3; }
+    z-index: 3;
+    line-height: 96px; }
   .countdown-container .count.top {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -751,7 +752,8 @@ button.btn {
     -moz-transform-origin: 50% 100%;
     -ms-transform-origin: 50% 100%;
     -o-transform-origin: 50% 100%;
-    transform-origin: 50% 100%; }
+    transform-origin: 50% 100%;
+    line-height: 96px; }
   .countdown-container .count {
     background: #202020;
     color: #f8f8f8;
@@ -827,3 +829,7 @@ button.btn {
     position: absolute;
     top: 95px;
     width: 100%; }
+
+.counttimer-container {
+  margin: 0 auto;
+  width: 500px; }
