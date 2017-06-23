@@ -143,6 +143,24 @@ button {
     font-weight: bold;
 }
 
+.btn-success {
+    font-weight: bold;
+}
+
+.btn-add {
+    background-color: transparent;
+    color: $primary;
+    font-weight: bold;
+    border: 1px solid $primary;
+    border-radius: 3px;
+    transition: all 0.4s ease-in-out 0s;
+
+    &:hover {
+        background-color: $primary;
+        color: #fff;
+    }
+}
+
 /* Style the tab */
 div.profile-tab {
     overflow: hidden;
@@ -955,7 +973,7 @@ button.btn {
     height: 130px;
 
     .time {
-        border-radius: 5px;
+        border-radius: 3px;
         box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
         display: inline-block;
         text-align: center;
@@ -1099,12 +1117,18 @@ button.btn {
     }
 
     .label {
-        font-size: normal;
+        font-size: 0.5em;
         margin-top: 5px;
         display: block;
         position: absolute;
         top: 95px;
         width: 100%;
+        color: $grey;
+        font-family: $font-normal;
+    }
+
+    .time {
+        margin: 0 10px;
     }
 }
 

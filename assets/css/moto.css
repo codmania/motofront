@@ -2,7 +2,7 @@
   display: block;
   position: relative;
   width: 100%;
-  border-radius: 0;
+  border-radius: 3px;
   box-shadow: 0px 0px 10px 1px #d4d4d5; }
   .mt-card__image {
     display: block;
@@ -89,6 +89,18 @@
     position: relative; }
     .mt-card__content .friend-image {
       margin-top: 15px; }
+    .mt-card__content .item .icon-status {
+      font-size: 1.5em;
+      display: table-cell;
+      width: 25px;
+      height: 25px;
+      padding: 0;
+      margin: 0;
+      background-color: #eee;
+      vertical-align: middle;
+      text-align: center;
+      line-height: 25px;
+      border-radius: 3px; }
   .mt-card__heading {
     font-size: 1.3em;
     text-transform: uppercase;
@@ -416,6 +428,34 @@ thead.mt-thead tr th {
     margin-right: 7px; }
   .table-contests tbody tr td button {
     width: 100%; }
+
+table .icon-status {
+  font-size: 1.5em; }
+
+table td .btn {
+  width: 100%;
+  text-transform: uppercase; }
+
+.table-play thead tr {
+  background-color: rgba(93, 93, 93, 0.4); }
+  .table-play thead tr th {
+    font-size: 0.9em;
+    color: #555;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase; }
+
+.table-play tbody tr td {
+  padding: 0.2em 0.75em;
+  color: #5D5D5D;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle; }
+  .table-play tbody tr td.color-odd {
+    color: rgba(98, 0, 234, 0.7); }
+  .table-play tbody tr td .btn-add {
+    padding: 0.4rem 1rem;
+    font-size: 0.9em; }
 
 @media (max-width: 991px) {
   .navbar-moto__primary li.nav-item a {

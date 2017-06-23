@@ -103,6 +103,20 @@ button:focus {
   color: #fff;
   font-weight: bold; }
 
+.btn-success {
+  font-weight: bold; }
+
+.btn-add {
+  background-color: transparent;
+  color: #6200ea;
+  font-weight: bold;
+  border: 1px solid #6200ea;
+  border-radius: 3px;
+  transition: all 0.4s ease-in-out 0s; }
+  .btn-add:hover {
+    background-color: #6200ea;
+    color: #fff; }
+
 /* Style the tab */
 div.profile-tab {
   overflow: hidden;
@@ -697,7 +711,7 @@ button.btn {
 .countdown-container {
   height: 130px; }
   .countdown-container .time {
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
     display: inline-block;
     text-align: center;
@@ -823,12 +837,16 @@ button.btn {
     -o-transform: rotateX(0deg);
     transform: rotateX(0deg); }
   .countdown-container .label {
-    font-size: normal;
+    font-size: 0.5em;
     margin-top: 5px;
     display: block;
     position: absolute;
     top: 95px;
-    width: 100%; }
+    width: 100%;
+    color: #5D5D5D;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .countdown-container .time {
+    margin: 0 10px; }
 
 .counttimer-container {
   margin: 0 auto;
