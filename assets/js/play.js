@@ -96,6 +96,7 @@ $(function() {
 
         drawRacers();
         drawSelectedRacers();
+
     });
 
     function drawRacers() {
@@ -131,6 +132,13 @@ $(function() {
         for (var i = 5; i >= count; i--) {
             $list.append(emptyTemplate());
         }
+
+        if(count >= 6) {
+            document.getElementById("saveSelectedRacers").disabled = false;
+        } else {
+            document.getElementById("saveSelectedRacers").disabled = true;
+        }
+
     }
 
     drawRacers();
