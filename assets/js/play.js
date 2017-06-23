@@ -11,7 +11,7 @@ $(function() {
         {
             id: _.uniqueId(),
             racer_id: 10,
-            name: 'Cooper Webb',
+            name: 'Eli Tomac',
             class: '450',
             status: 'success',
             is_added: false
@@ -19,33 +19,57 @@ $(function() {
         {
             id: _.uniqueId(),
             racer_id: 20,
-            name: 'Cooper Webb',
+            name: 'Blake Baggett',
             class: '450',
-            status: 'success',
+            status: 'normal',
             is_added: false
         },
         {
             id: _.uniqueId(),
             racer_id: 21,
-            name: 'Cooper Webb',
-            class: '450',
+            name: 'Jeremy Martin',
+            class: '250',
             status: 'success',
             is_added: false
         },
         {
             id: _.uniqueId(),
             racer_id: 22,
-            name: 'Cooper Webb',
+            name: 'Cole Seely',
+            class: '450',
+            status: 'danger',
+            is_added: false
+        },
+        {
+            id: _.uniqueId(),
+            racer_id: 25,
+            name: 'Dean Wilson',
             class: '450',
             status: 'success',
             is_added: false
         },
         {
             id: _.uniqueId(),
-            racer_id: 25,
-            name: 'Cooper Webb',
-            class: '450',
+            racer_id: 30,
+            name: 'Zach Osborne',
+            class: '250',
+            status: 'normal',
+            is_added: false
+        },
+        {
+            id: _.uniqueId(),
+            racer_id: 31,
+            name: 'Joey Savatgy',
+            class: '250',
             status: 'success',
+            is_added: false
+        },
+        {
+            id: _.uniqueId(),
+            racer_id: 32,
+            name: 'Justin Bogle',
+            class: '450',
+            status: 'danger',
             is_added: false
         }
     ];
@@ -64,7 +88,7 @@ $(function() {
         }
 
         var selectedRacers = _.where(racers, {is_added: true});
-        if(selectedRacers.length > 6)
+        if(btnId.indexOf('add') !== -1 && selectedRacers.length > 5)
             return;
 
         var selectedRacer = _.find(racers, function(r) { return r.racer_id == racerId; });
@@ -104,7 +128,7 @@ $(function() {
             }));
         });
 
-        for (var i = 6; i > count; i--) {
+        for (var i = 5; i >= count; i--) {
             $list.append(emptyTemplate());
         }
     }
