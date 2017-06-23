@@ -42,8 +42,10 @@ function openSubTab(evt, selected) {
     evt.currentTarget.className += " active";
 }
 
-document.getElementById("defaultTab").click();
-document.getElementById("defaultSubTab").click();
+if (document.getElementById("defaultTab")) {
+    document.getElementById("defaultTab").click();
+    document.getElementById("defaultSubTab").click();
+}
 
 function openSideNav() {
     document.getElementById("mt_sidenav").style.width = "150px";

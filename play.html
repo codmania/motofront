@@ -149,7 +149,7 @@ WARNING: Respond.js doesn't work if you view the page via file://
                             </div>
 
                             <div class="table-responsive mt-20">
-                                <table class="table table-bordered table-play mt-border" id="searchTable">
+                                <table class="table table-bordered table-play mt-border racer-table" id="searchTable">
                                     <thead class="mt-thead">
                                         <tr>
                                             <th>#</th>
@@ -159,120 +159,7 @@ WARNING: Respond.js doesn't work if you view the page via file://
                                             <th>Add</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="color-odd text-meta">3</td>
-                                            <td class="text-xs-left color-odd text-bold">Eli Tomac</td>
-                                            <td>450</td>
-                                            <td class="">
-                                                <span class="icon-status success">&#x2B22;</span>
-                                            </td>
-                                            <td class="">
-                                                <a href="#" type="button" class="btn btn-add">
-                                                    <i class="icon ion-plus-round"></i>
-                                                    Add
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="color-odd text-meta">20</td>
-                                            <td class="text-xs-left color-odd text-bold">Cole Seely</td>
-                                            <td>100</td>
-                                            <td class="">
-                                                <span class="icon-status normal">&#x2B22;</span>
-                                            </td>
-                                            <td class="">
-                                                <a href="#" type="button" class="btn btn-add">
-                                                    <i class="icon ion-plus-round"></i>
-                                                    Add
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="color-odd text-meta">21</td>
-                                            <td class="text-xs-left color-odd text-bold">Jach Osborne</td>
-                                            <td>6,000</td>
-                                            <td class="">
-                                                <span class="icon-status success">&#x2B22;</span>
-                                            </td>
-                                            <td class="">
-                                                <a href="#" type="button" class="btn btn-add">
-                                                    <i class="icon ion-plus-round"></i>
-                                                    Add
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="color-odd text-meta">23</td>
-                                            <td class="text-xs-left color-odd text-bold">Justine Bogle</td>
-                                            <td>450</td>
-                                            <td class="">
-                                                <span class="icon-status danger">&#x2B22;</span>
-                                            </td>
-                                            <td class="">
-                                                <a href="#" type="button" class="btn btn-add">
-                                                    <i class="icon ion-plus-round"></i>
-                                                    Add
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="color-odd text-meta">25</td>
-                                            <td class="text-xs-left color-odd text-bold">Jason Anderson</td>
-                                            <td>1,200</td>
-                                            <td class="">
-                                                <span class="icon-status success">&#x2B22;</span>
-                                            </td>
-                                            <td class="">
-                                                <a href="#" type="button" class="btn btn-add">
-                                                    <i class="icon ion-plus-round"></i>
-                                                    Add
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="color-odd text-meta">26</td>
-                                            <td class="text-xs-left color-odd text-bold">Austin Forker</td>
-                                            <td>250</td>
-                                            <td class="">
-                                                <span class="icon-status success">&#x2B22;</span>
-                                            </td>
-                                            <td class="">
-                                                <a href="#" type="button" class="btn btn-add">
-                                                    <i class="icon ion-plus-round"></i>
-                                                    Add
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="color-odd text-meta">27</td>
-                                            <td class="text-xs-left color-odd text-bold">Alex Martin</td>
-                                            <td>270</td>
-                                            <td class="">
-                                                <span class="icon-status success">&#x2B22;</span>
-                                            </td>
-                                            <td class="">
-                                                <a href="#" type="button" class="btn btn-add">
-                                                    <i class="icon ion-plus-round"></i>
-                                                    Add
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="color-odd text-meta">30</td>
-                                            <td class="text-xs-left color-odd text-bold">Davi Millsaps</td>
-                                            <td>750</td>
-                                            <td class="">
-                                                <span class="icon-status normal">&#x2B22;</span>
-                                            </td>
-                                            <td class="">
-                                                <a href="#" type="button" class="btn btn-add">
-                                                    <i class="icon ion-plus-round"></i>
-                                                    Add
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
+                                    <tbody></tbody>
                                 </table>
                             </div>
                         </div>
@@ -317,84 +204,17 @@ WARNING: Respond.js doesn't work if you view the page via file://
                         </a>
 
                         <div class="table-responsive mt-20">
-                            <table class="table table-bordered mt-border" id="searchTable">
+                            <table class="table table-bordered table-play mt-border select-racer-table">
                                 <thead class="mt-thead">
                                     <tr>
-                                        <th>Positions</th>
+                                        <th class="col-position">Positions</th>
                                         <th>#</th>
-                                        <th>Name</th>
+                                        <th class="text-xs-left">Name</th>
                                         <th>Class</th>
                                         <th>Remove</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <input type="number" class="input-primary" min="0">
-                                        </td>
-                                        <td>3</td>
-                                        <td>Eli Tomac</td>
-                                        <td>450</td>
-                                        <td class="text-xs-center">
-                                            <a href="#" type="button" class="btn btn-remove">Remove</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="number" class="input-primary" min="0">
-                                        </td>
-                                        <td>3</td>
-                                        <td>Eli Tomac</td>
-                                        <td>450</td>
-                                        <td class="text-xs-center">
-                                            <a href="#" type="button" class="btn btn-remove">Remove</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="number" class="input-primary" min="0">
-                                        </td>
-                                        <td>3</td>
-                                        <td>Eli Tomac</td>
-                                        <td>450</td>
-                                        <td class="text-xs-center">
-                                            <a href="#" type="button" class="btn btn-remove">Remove</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="number" class="input-primary" min="0">
-                                        </td>
-                                        <td>3</td>
-                                        <td>Eli Tomac</td>
-                                        <td>450</td>
-                                        <td class="text-xs-center">
-                                            <a href="#" type="button" class="btn btn-remove">Remove</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="number" class="input-primary" min="0">
-                                        </td>
-                                        <td>3</td>
-                                        <td>Eli Tomac</td>
-                                        <td>450</td>
-                                        <td class="text-xs-center">
-                                            <a href="#" type="button" class="btn btn-remove">Remove</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="number" class="input-primary" min="0">
-                                        </td>
-                                        <td>3</td>
-                                        <td>Eli Tomac</td>
-                                        <td>450</td>
-                                        <td class="text-xs-center">
-                                            <a href="#" type="button" class="btn btn-remove">Remove</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
+                                <tbody></tbody>
                             </table>
                         </div>
 
@@ -465,10 +285,62 @@ WARNING: Respond.js doesn't work if you view the page via file://
         <span class="count next top"><%= next %></span>
         <span class="count next bottom"><%= next %></span>
         <span class="count curr bottom"><%= curr %></span>
-        <span class="label"><%= label.length < 6 ? label : label.substr(0, 3)  %></span>
+        <span class="label"><%= label.length < 6 ? label : label.substr(0, 3) %></span>
     </div>
 </script>
 <!-- end timer template -->
+
+<!-- racer template -->
+<script type="text/template" id="racer-template">
+    <tr style="display: <%= racer.is_added == false ? 'table-row' : 'none' %>">
+        <td class="text-meta"><%= racer.racer_id %></td>
+        <td class="text-xs-left color-odd text-bold"><%= racer.name %></td>
+        <td><%= racer.class %></td>
+        <td>
+            <span class="icon-status <%= racer.status %>">&#x2B22;</span>
+        </td>
+        <td>
+            <button href="#" type="button" class="btn btn-add btn-racer-action" id="addRacer_<%= racer.racer_id %>">
+                <i class="icon ion-plus-round"></i>
+                Add
+            </button>
+        </td>
+    </tr>
+</script>
+<!-- end racer template -->
+
+<!-- selected racer template -->
+<script type="text/template" id="selected-racer-template">
+    <tr>
+        <td class="col-position">
+            <input type="number" class="input-primary" min="0">
+        </td>
+        <td class="text-meta"><%= racer.racer_id %></td>
+        <td class="text-xs-left color-odd text-bold"><%= racer.name %></td>
+        <td><%= racer.class %></td>
+        <td>
+            <button href="#" type="button" class="btn btn-add btn-racer-action" id="removeRacer_<%= racer.racer_id %>">
+                <i class="icon ion-minus-round"></i>
+                Remove
+            </button>
+        </td>
+    </tr>
+</script>
+<!-- end selected racer template -->
+
+<!-- empty racer template -->
+<script type="text/template" id="empty-racer-template">
+    <tr class="select-empty">
+        <td colspan="5">
+            <button href="#" type="button" class="btn btn-select-racer">
+                <i class="icon ion-person-add"></i>
+                Select Racer
+            </button>
+        </td>
+    </tr>
+</script>
+<!-- empty racer template -->
+
 <!-- ========== End Templates ========== -->
 
 <!-- ========== Javascript ========== -->
@@ -498,6 +370,8 @@ WARNING: Respond.js doesn't work if you view the page via file://
 <script type="text/javascript" src="assets/js/custom.js"></script>
 
 <script type="text/javascript" src="assets/js/profile.js"></script>
+
+<script type="text/javascript" src="assets/js/play.js"></script>
 
 <script type="text/javascript">
     $(window).on('load', function() {

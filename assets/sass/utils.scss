@@ -145,18 +145,18 @@ button {
 
 .btn-success {
     font-weight: bold;
+    border-radius: 3px;
 }
 
 .btn-add {
-    background-color: transparent;
     color: $primary;
     font-weight: bold;
-    border: 1px solid $primary;
     border-radius: 3px;
     transition: all 0.4s ease-in-out 0s;
+    border: 1px solid $primary !important;
 
     &:hover {
-        background-color: $primary;
+        background-color: $primary !important;
         color: #fff;
     }
 }
@@ -794,11 +794,11 @@ button.btn {
 }
 
 .btn-pending {
-    background-color: $secondary;
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: $grey;
 
     &:hover {
-        background-color: #da7912;
+        background-color: rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -827,10 +827,24 @@ button.btn {
         -ms-flex: 1 0 auto;
         flex: 1 0 auto;
         margin: 0;
-        border-radius: 0;
         margin: 0;
-        box-shadow: 2px 2px 4px 0px #d4d4d5;
         font-weight: bold;
+        text-transform: uppercase;
+        width: 100px;
+    }
+
+    .btn-pending {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .btn-success {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
 
     .or {

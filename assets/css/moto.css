@@ -308,10 +308,6 @@ thead.mt-thead tr th {
 .border-wrapper {
   border: 1px solid rgba(93, 93, 93, 0.3); }
 
-.table-search-input input,
-.table-search-input button {
-  border-radius: 0; }
-
 .table-search-input .input-group-btn button {
   border-left: 0; }
 
@@ -455,7 +451,23 @@ table td .btn {
     color: rgba(98, 0, 234, 0.7); }
   .table-play tbody tr td .btn-add {
     padding: 0.4rem 1rem;
-    font-size: 0.9em; }
+    font-size: 0.9em;
+    background-color: #fff; }
+
+.table-play .col-position input {
+  max-width: 100px;
+  padding: 3px;
+  border-radius: 3px; }
+
+.table-play tr.select-empty td {
+  padding: 0.5em 0.75em; }
+
+.btn-select-racer {
+  font-weight: bold;
+  color: #5D5D5D; }
+  .btn-select-racer i {
+    font-size: 1.2em;
+    margin-right: 5px; }
 
 @media (max-width: 991px) {
   .navbar-moto__primary li.nav-item a {

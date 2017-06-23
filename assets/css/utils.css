@@ -104,17 +104,17 @@ button:focus {
   font-weight: bold; }
 
 .btn-success {
-  font-weight: bold; }
+  font-weight: bold;
+  border-radius: 3px; }
 
 .btn-add {
-  background-color: transparent;
   color: #6200ea;
   font-weight: bold;
-  border: 1px solid #6200ea;
   border-radius: 3px;
-  transition: all 0.4s ease-in-out 0s; }
+  transition: all 0.4s ease-in-out 0s;
+  border: 1px solid #6200ea !important; }
   .btn-add:hover {
-    background-color: #6200ea;
+    background-color: #6200ea !important;
     color: #fff; }
 
 /* Style the tab */
@@ -574,10 +574,10 @@ button.btn {
   transition: all 0.4s ease-in-out 0s; }
 
 .btn-pending {
-  background-color: #FF8300;
-  color: #fff; }
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #5D5D5D; }
   .btn-pending:hover {
-    background-color: #da7912; }
+    background-color: rgba(0, 0, 0, 0.2); }
 
 .btn-groups {
   display: -webkit-inline-box;
@@ -601,10 +601,20 @@ button.btn {
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
     margin: 0;
-    border-radius: 0;
     margin: 0;
-    box-shadow: 2px 2px 4px 0px #d4d4d5;
-    font-weight: bold; }
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100px; }
+  .btn-groups .btn-pending {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .btn-groups .btn-success {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
   .btn-groups .or {
     position: relative;
     width: .3em;
