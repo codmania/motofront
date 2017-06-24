@@ -54,6 +54,9 @@
 .text-xs {
   font-size: 0.7em !important; }
 
+.font-alter {
+  font-family: Raleway; }
+
 .color-secondary {
   color: #FF8300 !important; }
 

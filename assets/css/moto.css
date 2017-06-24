@@ -356,7 +356,14 @@ thead.mt-thead tr th {
 .moto-play-card {
   padding: 15px;
   box-shadow: 0px 0px 3px 1px #d4d4d5;
-  max-width: 330px; }
+  max-width: 330px;
+  border-radius: 3px; }
+  .moto-play-card .logo {
+    color: #fff;
+    text-align: center;
+    font-family: Raleway;
+    margin-bottom: 20px;
+    font-weight: bold; }
   .moto-play-card .signup-free {
     font-size: 0.8em;
     color: #eee;
@@ -366,12 +373,17 @@ thead.mt-thead tr th {
     color: #fff;
     margin-top: 10px;
     border-radius: 2px;
-    padding: 5px;
-    font-weight: normal; }
+    padding: 7px;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-transform: uppercase; }
   .moto-play-card .btn-transparent {
     border: 2px solid #fff;
     background-color: transparent;
-    font-size: 0.9em; }
+    font-size: 0.9em;
+    width: 100%;
+    color: #fff;
+    margin-top: 10px; }
   .moto-play-card__head {
     margin-top: -15px;
     padding: 5px 0; }
