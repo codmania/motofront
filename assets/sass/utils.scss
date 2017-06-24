@@ -54,6 +54,10 @@ $font-normal: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: $grey;
 }
 
+.text-moto {
+    color: $primary;
+}
+
 .text-meta {
     color: #999 !important;
 }
@@ -386,8 +390,6 @@ hr {
 
 .navbar {
     z-index: 100;
-    padding-top: 0;
-    padding-bottom: 0;
 
     .navbar-nav {
         .active > .nav-link {
@@ -501,11 +503,11 @@ hr {
 }
 
 .resize.navbar {
-    background-color: $primary;
+    background-color: #fff;
 
-    .navbar-nav li:not(.active) a.nav-link:not(:hover) {
-        color: #fff !important;
-    }
+    // .navbar-nav li:not(.active) a.nav-link:not(:hover) {
+    //     color: #fff !important;
+    // }
 }
 
 #scroll-top {

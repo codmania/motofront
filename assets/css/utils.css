@@ -36,6 +36,9 @@
 .text-default {
   color: #5D5D5D; }
 
+.text-moto {
+  color: #6200ea; }
+
 .text-meta {
   color: #999 !important; }
 
@@ -287,9 +290,7 @@ hr {
     margin-bottom: 25px; }
 
 .navbar {
-  z-index: 100;
-  padding-top: 0;
-  padding-bottom: 0; }
+  z-index: 100; }
   .navbar .navbar-nav .active > .nav-link {
     color: #FF8300 !important; }
   .navbar .navbar-nav li a.nav-link:hover {
@@ -357,9 +358,7 @@ hr {
   margin-top: 10px; }
 
 .resize.navbar {
-  background-color: #6200ea; }
-  .resize.navbar .navbar-nav li:not(.active) a.nav-link:not(:hover) {
-    color: #fff !important; }
+  background-color: #fff; }
 
 #scroll-top {
   border: 3px solid #6200ea;

@@ -526,6 +526,16 @@ table td .btn {
       .contests-action__group .contests-mark:last-child {
         color: rgba(98, 0, 234, 0.3); }
 
+.logo-wrapper {
+  float: left;
+  margin-top: 22px; }
+  .logo-wrapper span {
+    font-size: 1.3em;
+    color: #333; }
+
+.resize.navbar .logo-wrapper {
+  margin-top: 10px; }
+
 @media (max-width: 991px) {
   .navbar-moto__primary li.nav-item a {
     color: #fff !important; }
@@ -536,7 +546,7 @@ table td .btn {
     .navbar-moto__animate .navbar-toggler:hover {
       color: #6200ea; }
   .navbar-moto__animate.resize .navbar-toggler {
-    color: #fff; }
+    color: #333; }
     .navbar-moto__animate.resize .navbar-toggler:hover {
       color: #FF8300; } }
 
