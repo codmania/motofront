@@ -355,7 +355,8 @@ thead.mt-thead tr th {
 
 .moto-play-card {
   padding: 15px;
-  box-shadow: 0px 0px 3px 1px #d4d4d5; }
+  box-shadow: 0px 0px 3px 1px #d4d4d5;
+  max-width: 330px; }
   .moto-play-card .signup-free {
     font-size: 0.8em;
     color: #eee;
@@ -477,6 +478,35 @@ table td .btn {
   .table-striped.table-play thead th i {
     color: #aaa; }
 
+.contests-action {
+  display: block;
+  position: relative;
+  text-align: right;
+  width: 100%;
+  padding: 10px 0; }
+  .contests-action > div {
+    display: inline-block;
+    vertical-align: middle; }
+  .contests-action__group {
+    margin-left: 20px; }
+    .contests-action__group button {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-transform: uppercase; }
+    .contests-action__group > div {
+      line-height: 1em; }
+    .contests-action__group #contests-started {
+      font-size: 1.3em;
+      font-weight: bold; }
+    .contests-action__group .contests-mark {
+      font-size: 2em; }
+      .contests-action__group .contests-mark:first-child {
+        color: rgba(98, 0, 234, 0.6);
+        position: relative;
+        left: 20px; }
+      .contests-action__group .contests-mark:last-child {
+        color: rgba(98, 0, 234, 0.3); }
+
 @media (max-width: 991px) {
   .navbar-moto__primary li.nav-item a {
     color: #fff !important; }
@@ -497,7 +527,9 @@ table td .btn {
   .nav-top .navbar {
     top: 38px; }
   .nav-top .sub-navTop {
-    height: 38px; } }
+    height: 38px; }
+  .moto-play-card {
+    margin: auto; } }
 
 .dataTables_length,
 .dataTables_filter,

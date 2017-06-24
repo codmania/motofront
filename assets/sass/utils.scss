@@ -959,6 +959,11 @@ button.btn {
             font-family: $font-normal;
             padding: 0 5px;
 
+            strong {
+                font-weight: normal;
+                font-size: 0.9em;
+            }
+
             span {
                 font-size: 0.9em;
             }

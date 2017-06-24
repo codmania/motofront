@@ -127,17 +127,25 @@ WARNING: Respond.js doesn't work if you view the page via file://
                     <div class="hex">
                         <span>&#x2B22;</span>
                     </div>
-                    <p>
-                        a passion for racing
-                    </p>
                 </center>
 
                 <div class="mt-card wow zoomIn" data-wow-delay=".6s">
                     <div class="mt-card__content">
-                        <a href="#" class="ribbon ribbon-alter right">
-                            <span class="ribbon-time">17:14:59</span>
-                            <span class="ribbon-title">Next Contests</span>
-                        </a>
+                        <div class="contests-action">
+                            <div class="contests-action__group">
+                                <span class="contests-mark">&#x2B22;</span>
+                                <span class="contests-mark">&#x2B22;</span>
+                            </div>
+                            <div class="contests-action__group">
+                                <div id="contests-started" class="text-default"></div>
+                                <div class="text-bold text-meta">Next Contest</div>
+                            </div>
+                            <div class="contests-action__group">
+                                <button class="btn btn-alter">
+                                    Create Contests
+                                </button>
+                            </div>
+                        </div>
 
                         <div class="profile-tab mt-10">
                             <button class="tablinks" onclick="openTab(event, 'tabSupercross')" id="defaultTab">Supercross</button>
@@ -150,8 +158,8 @@ WARNING: Respond.js doesn't work if you view the page via file://
                         <div id="tabSupercross" class="tabcontent">
                             <div class="row">
                                 <div class="inline-tab">
-                                    <button class="tab-sublinks tab-with-intro text-capital" onclick="openSubTab(event, 'tabSupercross_featured')" id="defaultSubTab">
-                                        <span class="tab-title">Featured</span>
+                                    <button class="tab-sublinks tab-with-intro text-capital" onclick="openSubTab(event, 'tabSupercross_all')" id="defaultSubTab">
+                                        <span class="tab-title">All</span>
                                     </button>
                                     <button class="tab-sublinks tab-with-intro text-capital" onclick="openSubTab(event, 'tabSupercross_group')">
                                         <span class="tab-title">Group Contests</span>
@@ -162,18 +170,15 @@ WARNING: Respond.js doesn't work if you view the page via file://
                                     <button class="tab-sublinks tab-with-intro text-capital" onclick="openSubTab(event, 'tabSupercross_beginner')">
                                         <span class="tab-title">Beginner Contests</span>
                                     </button>
+                                    <button class="tab-sublinks tab-with-intro text-capital" onclick="openSubTab(event, 'tabSupercross_leagues')">
+                                        <span class="tab-title">Leagues</span>
+                                    </button>
                                 </div>
 
-                                <div id="tabSupercross_featured" class="tab-subcontent side-pd-none">
+                                <div id="tabSupercross_all" class="tab-subcontent side-pd-none">
                                     <div class="row">
                                         <div class="col-md-3 col-xs-12">
                                             <div class="moto-play-card card-primary mt-20 wow zoomIn" data-wow-delay=".6s">
-                                                <img src="assets/images/logo_resize.png" alt="Logo White" style="width:50%;">
-                                                <h5 class="text-white">
-                                                    PLAY <br>
-                                                    FANTASY MOTO RACING
-                                                </h5>
-                                                <a href="#" class="signup-free">Sign up for <strong>FREE</strong></a>
                                                 <div class="mt-10">
                                                     <button class="btn btn-attach">Crate a League</button>
                                                     <button class="btn btn-attach">Draft a Team Now</button>
@@ -537,55 +542,15 @@ WARNING: Respond.js doesn't work if you view the page via file://
                                 </div>
 
                                 <div id="tabSupercross_group" class="tab-subcontent">
-                                    <div class="table-responsive mt-20">
-                                        <table class="table table-bordered mt-border">
-                                            <thead class="mt-thead">
-                                                <tr>
-                                                    <th>Position</th>
-                                                    <th>Username</th>
-                                                    <th>Total</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Craig</td>
-                                                    <td>295</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Craig</td>
-                                                    <td>295</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Craig</td>
-                                                    <td>295</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Craig</td>
-                                                    <td>295</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Craig</td>
-                                                    <td>295</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Craig</td>
-                                                    <td>295</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
                                 </div>
 
                                 <div id="tabSupercross_head" class="tab-subcontent">
                                 </div>
 
                                 <div id="tabSupercross_beginner" class="tab-subcontent">
+                                </div>
+
+                                <div id="tabSupercross_leagues" class="tab-subcontent">
                                 </div>
 
                             </div>
@@ -675,6 +640,7 @@ WARNING: Respond.js doesn't work if you view the page via file://
 <!-- Bootstrap v4.0.0-alpha.5-->
 <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.countdown/dist/jquery.countdown.js"></script>
 <!-- counterup  1.0-->
 <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
 <!--jQuery Waypoints - v2.0.3-->
@@ -691,6 +657,16 @@ WARNING: Respond.js doesn't work if you view the page via file://
 <script type="text/javascript" src="assets/js/custom.js"></script>
 
 <script type="text/javascript" src="assets/js/profile.js"></script>
+
+<div id="getting-started"></div>
+<script type="text/javascript">
+    $("#contests-started").countdown("2017/01/01", function(event) {
+        $(this).text(
+            event.strftime('%H:%M:%S')
+        );
+    });
+</script>
+
 
 </body>
 </html>

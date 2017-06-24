@@ -704,6 +704,9 @@ button.btn {
       color: #fff;
       font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       padding: 0 5px; }
+      .static-list .item-group span.item-content strong {
+        font-weight: normal;
+        font-size: 0.9em; }
       .static-list .item-group span.item-content span {
         font-size: 0.9em; }
     .static-list .item-group img {
