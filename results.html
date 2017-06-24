@@ -14,6 +14,7 @@
     <!-- ========== STYLESHEETS ========== -->
     <!-- google font Raleway-->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
     <!-- Bootstrap v4.0.0-alpha.5-->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
     <!-- Bootstrap   Ionicons v2.0.0-->
@@ -36,6 +37,9 @@ WARNING: Respond.js doesn't work if you view the page via file://
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <!--[endif]-->
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body id="home" class="nav-top">
@@ -145,12 +149,16 @@ WARNING: Respond.js doesn't work if you view the page via file://
 
                         <div id="tabResults" class="tabcontent">
                             <div class="table-responsive mt-20">
-                                <table class="table table-bordered table-striped table-play mt-border">
+                                <table class="table table-bordered table-striped table-play mt-border" id="resultsTable">
                                     <thead class="mt-thead">
                                         <tr>
                                             <th>#</th>
-                                            <th class="text-xs-left">Name</th>
-                                            <th>Class</th>
+                                            <th class="text-xs-left">
+                                                Name
+                                            </th>
+                                            <th>
+                                                Class
+                                            </th>
                                             <th>Prediction</th>
                                             <th>Race Finish</th>
                                             <th>Accurancy Pts</th>
@@ -234,7 +242,7 @@ WARNING: Respond.js doesn't work if you view the page via file://
 
                         <div id="tabLeaderboard" class="tabcontent">
                             <div class="table-responsive mt-20">
-                                <table class="table table-bordered mt-border">
+                                <table class="table table-bordered table-striped table-play mt-border">
                                     <thead class="mt-thead">
                                         <tr>
                                             <th>Position</th>
@@ -244,34 +252,24 @@ WARNING: Respond.js doesn't work if you view the page via file://
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
-                                            <td>Craig</td>
-                                            <td>295</td>
+                                            <td class="text-meta">1</td>
+                                            <td class="color-odd">Craig</td>
+                                            <td class="color-odd">295</td>
                                         </tr>
                                         <tr>
-                                            <td>1</td>
-                                            <td>Craig</td>
-                                            <td>295</td>
+                                            <td class="text-meta">2</td>
+                                            <td class="color-odd">C2PO9</td>
+                                            <td class="color-odd">212</td>
                                         </tr>
                                         <tr>
-                                            <td>1</td>
-                                            <td>Craig</td>
-                                            <td>295</td>
+                                            <td class="text-meta">3</td>
+                                            <td class="color-odd">Raptorattack</td>
+                                            <td class="color-odd">151</td>
                                         </tr>
                                         <tr>
-                                            <td>1</td>
-                                            <td>Craig</td>
-                                            <td>295</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Craig</td>
-                                            <td>295</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Craig</td>
-                                            <td>295</td>
+                                            <td class="text-meta">4</td>
+                                            <td class="color-odd">CyrusLyonsDynasty</td>
+                                            <td class="color-odd">150.5</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -355,6 +353,7 @@ WARNING: Respond.js doesn't work if you view the page via file://
 <script type="text/javascript" src="assets/js/profile.js"></script>
 
 <script type="text/javascript" src="assets/js/table-sort.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
 
 </body>
 </html>

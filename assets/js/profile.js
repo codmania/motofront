@@ -44,6 +44,9 @@ function openSubTab(evt, selected) {
 
 if (document.getElementById("defaultTab")) {
     document.getElementById("defaultTab").click();
+}
+
+if (document.getElementById("defaultSubTab")) {
     document.getElementById("defaultSubTab").click();
 }
 

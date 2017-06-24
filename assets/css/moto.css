@@ -472,6 +472,11 @@ table td .btn {
 .table-striped.table-play tbody tr td {
   padding: 0.75em; }
 
+.table-striped.table-play thead th {
+  cursor: pointer; }
+  .table-striped.table-play thead th i {
+    color: #aaa; }
+
 @media (max-width: 991px) {
   .navbar-moto__primary li.nav-item a {
     color: #fff !important; }
