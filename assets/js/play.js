@@ -144,5 +144,14 @@ $(function() {
     drawRacers();
     drawSelectedRacers();
 
+    $('#cancelSelectedRacers').click(function(){
+        racers.forEach(function(racer) {
+            racer.is_added = false;
+        });
+
+        drawRacers();
+        drawSelectedRacers();
+    });
+
 });
 
