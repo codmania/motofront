@@ -650,8 +650,9 @@ button.btn {
 
 .list .item-group {
   padding: 8px 0px; }
-  .list .item-group i.icon {
-    margin-right: 8px; }
+  .list .item-group span.icon {
+    font-size: 1.2em;
+    margin-right: 5px; }
 
 .list .item-group:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
