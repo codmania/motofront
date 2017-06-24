@@ -38,14 +38,34 @@ WARNING: Respond.js doesn't work if you view the page via file://
     <!--[endif]-->
 </head>
 
-<body id="home" class="top-fixed-navbar">
-<!--start navbar-->
-<nav class="navbar navbar-fixed-top navbar-light">
+<body id="home" class="nav-top">
+
+<section class="sub-navTop">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="social">
+                    <ul class="list-unstyled">
+                        <li><a href=""><i class="icon ion-social-facebook"></i></a></li>
+                        <li><a href=""><i class="icon ion-social-twitter"></i></a></li>
+                        <li><a href=""><i class="icon ion-social-googleplus"></i></a></li>
+                        <li><a href=""><i class="icon ion-social-youtube-outline"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<nav class="navbar navbar-fixed-top navbar-light navbar-moto__animate">
     <div class="container">
         <button class="navbar-toggler hidden-lg-up" type="button" aria-label="Toggle navigation" onclick="openSideNav()">
             <i class="icon ion-navicon-round"></i>
         </button>
-        <img class="navbar-brand" src="assets/images/logo.png" alt="">
+        <a href="#">
+            <img class="navbar-brand logo-default" src="assets/images/logo.png" alt="Default Logo">
+            <img class="navbar-brand logo-resize" src="assets/images/logo_resize.png" alt="Resize Logo">
+        </a>
 
         <div class="collapse navbar-toggleable-md" id="navbarResponsive">
             <ul class="nav navbar-nav float-lg-right">
@@ -108,6 +128,10 @@ WARNING: Respond.js doesn't work if you view the page via file://
                     <div class="score-label">
                         total score
                     </div>
+
+                    <div class="hex">
+                        <span>&#x2B22;</span>
+                    </div>
                 </div>
                 <div class="mt-card wow zoomIn" data-wow-delay=".6s">
                     <div class="mt-card__content results__content">
@@ -121,11 +145,11 @@ WARNING: Respond.js doesn't work if you view the page via file://
 
                         <div id="tabResults" class="tabcontent">
                             <div class="table-responsive mt-20">
-                                <table class="table table-bordered mt-border">
+                                <table class="table table-bordered table-striped table-play mt-border">
                                     <thead class="mt-thead">
                                         <tr>
                                             <th>#</th>
-                                            <th>Name</th>
+                                            <th class="text-xs-left">Name</th>
                                             <th>Class</th>
                                             <th>Prediction</th>
                                             <th>Race Finish</th>
@@ -139,82 +163,69 @@ WARNING: Respond.js doesn't work if you view the page via file://
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
-                                            <td>Copper Webb</td>
-                                            <td>450</td>
+                                            <td class="text-meta">1</td>
+                                            <td class="text-xs-left color-odd">Copper Webb</td>
+                                            <td class="color-odd">450</td>
                                             <td>3</td>
+                                            <td class="color-odd">0</td>
                                             <td>0</td>
+                                            <td class="color-odd">0</td>
                                             <td>0</td>
+                                            <td class="color-odd">0</td>
                                             <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
+                                            <td class="color-odd">0</td>
                                         </tr>
                                         <tr>
-                                            <td>1</td>
-                                            <td>Copper Webb</td>
-                                            <td>450</td>
-                                            <td>3</td>
+                                            <td class="text-meta">2</td>
+                                            <td class="text-xs-left color-odd">Blake Baggett</td>
+                                            <td class="color-odd">450</td>
+                                            <td>2</td>
+                                            <td class="color-odd">0</td>
                                             <td>0</td>
+                                            <td class="color-odd">0</td>
                                             <td>0</td>
+                                            <td class="color-odd">0</td>
                                             <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
+                                            <td class="color-odd">0</td>
                                         </tr>
                                         <tr>
+                                            <td class="text-meta">3</td>
+                                            <td class="text-xs-left color-odd">Jeremy Martin</td>
+                                            <td class="color-odd">250</td>
                                             <td>1</td>
-                                            <td>Copper Webb</td>
-                                            <td>450</td>
-                                            <td>3</td>
+                                            <td class="color-odd">0</td>
                                             <td>0</td>
+                                            <td class="color-odd">0</td>
                                             <td>0</td>
+                                            <td class="color-odd">0</td>
                                             <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
+                                            <td class="color-odd">0</td>
                                         </tr>
                                         <tr>
-                                            <td>1</td>
-                                            <td>Copper Webb</td>
-                                            <td>450</td>
-                                            <td>3</td>
+                                            <td class="text-meta">4</td>
+                                            <td class="text-xs-left color-odd">Dean Wilson</td>
+                                            <td class="color-odd">450</td>
+                                            <td>8</td>
+                                            <td class="color-odd">0</td>
                                             <td>0</td>
+                                            <td class="color-odd">0</td>
                                             <td>0</td>
+                                            <td class="color-odd">0</td>
                                             <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
+                                            <td class="color-odd">0</td>
                                         </tr>
                                         <tr>
-                                            <td>1</td>
-                                            <td>Copper Webb</td>
-                                            <td>450</td>
-                                            <td>3</td>
+                                            <td class="text-meta">5</td>
+                                            <td class="text-xs-left color-odd">Joey Savatgy</td>
+                                            <td class="color-odd">450</td>
+                                            <td>7</td>
+                                            <td class="color-odd">0</td>
                                             <td>0</td>
+                                            <td class="color-odd">0</td>
                                             <td>0</td>
+                                            <td class="color-odd">0</td>
                                             <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Copper Webb</td>
-                                            <td>450</td>
-                                            <td>3</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
+                                            <td class="color-odd">0</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -342,6 +353,8 @@ WARNING: Respond.js doesn't work if you view the page via file://
 <script type="text/javascript" src="assets/js/custom.js"></script>
 
 <script type="text/javascript" src="assets/js/profile.js"></script>
+
+<script type="text/javascript" src="assets/js/table-sort.js"></script>
 
 </body>
 </html>
