@@ -498,3 +498,15 @@ table td .btn {
     top: 38px; }
   .nav-top .sub-navTop {
     height: 38px; } }
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
+  display: none; }
+
+table.dataTable thead th, table.dataTable thead td {
+  border-bottom: 0; }
+
+table.dataTable.no-footer {
+  border-bottom: 0; }
