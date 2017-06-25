@@ -256,7 +256,7 @@ hr {
   line-height: 1rem;
   text-align: center;
   background-color: #eceeef;
-  border-radius: 0; }
+  border-radius: 3px; }
 
 .progress-bar {
   height: 1rem;
