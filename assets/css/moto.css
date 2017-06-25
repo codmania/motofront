@@ -316,7 +316,18 @@ thead.mt-thead tr th {
   border: 1px solid rgba(93, 93, 93, 0.3); }
 
 .table-search-input .input-group-btn button {
-  border-left: 0; }
+  border-left: 0;
+  border-color: rgba(0, 0, 0, 0.15); }
+  .table-search-input .input-group-btn button:hover, .table-search-input .input-group-btn button:focus {
+    background-color: #fff;
+    border-color: rgba(0, 0, 0, 0.15);
+    border-left: 0; }
+
+.table-search-input input {
+  border-right: 0; }
+  .table-search-input input:hover, .table-search-input input:focus {
+    outline: none;
+    border-color: rgba(0, 0, 0, 0.15); }
 
 .table-search-input.input-group {
   width: 50%; }
