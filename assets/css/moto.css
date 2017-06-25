@@ -115,7 +115,7 @@
     margin-top: 10px; }
     .mt-card__heading span {
       vertical-align: middle;
-      font-family: Raleway;
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       font-weight: bold; }
     .mt-card__heading i {
       margin-right: 5px;
@@ -546,6 +546,14 @@ table td .btn {
 
 .resize.navbar .logo-wrapper {
   margin-top: 10px; }
+
+.mt-card__description .row {
+  padding: 3px 0; }
+  .mt-card__description .row .text-xs-right {
+    font-size: 0.9em;
+    color: #999; }
+  .mt-card__description .row .text-xs-left {
+    font-size: 1.1em; }
 
 @media (max-width: 991px) {
   .navbar-moto__primary li.nav-item a {
