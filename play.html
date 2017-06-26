@@ -132,6 +132,7 @@ WARNING: Respond.js doesn't work if you view the page via file://
             </center>
 
             <div class="col-lg-6 col-md-6 col-xs-12">
+                <h5 class="mt-card__legend"><a href="#">Rules & Scoring</a></h5>
                 <div class="mt-card wow zoomIn" data-wow-delay=".6s">
                     <div class="mt-card__content">
                         <a href="#" class="ribbon right">
@@ -196,6 +197,7 @@ WARNING: Respond.js doesn't work if you view the page via file://
             </div>
 
             <div class="col-lg-6 col-md-6 col-xs-12">
+                <h5 class="mt-card__legend text-md-right"><a href="#">Contest Prize</a></h5>
                 <div class="mt-card wow zoomIn" data-wow-delay=".6s">
                     <div class="mt-card__content">
                         <a href="#" class="ribbon right">
@@ -375,8 +377,8 @@ WARNING: Respond.js doesn't work if you view the page via file://
 <script type="text/javascript">
     $(window).on('load', function() {
         var labels = ['days', 'hours', 'minutes', 'seconds'],
-        // nextYear = (new Date().getFullYear() + 1) + '/01/01',
-        nextYear = '2015/01/01',
+        nextYear = (new Date().getFullYear() + 1) + '/01/01',
+        // nextYear = '2015/01/01',
         template = _.template($('#timer-template').html()),
         currDate = '00:00:00:00',
         nextDate = '00:00:00:00',

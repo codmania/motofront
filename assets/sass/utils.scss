@@ -1,8 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Play);
+
 $primary: #6200ea;
 $secondary: #FF8300;
 $grey: #5D5D5D;
 
 $font-normal: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-play: 'Play', sans-serif;
 
 
 .moto-container {
@@ -11,6 +14,10 @@ $font-normal: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     padding-left: 2rem;
     padding-right: 2rem;
     position: relative;
+}
+
+h2.h1 {
+    font-family: $font-play;
 }
 
 .mt-5 {
@@ -84,6 +91,10 @@ $font-normal: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
 .font-alter {
     font-family: Raleway;
+}
+
+.font-play {
+    font-family: $font-play;
 }
 
 .color-secondary {
