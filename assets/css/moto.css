@@ -493,10 +493,9 @@ table td .btn {
   vertical-align: middle; }
   .table-play tbody tr td.color-odd {
     color: rgba(98, 0, 234, 0.7); }
-  .table-play tbody tr td .btn-add {
+  .table-play tbody tr td .btn-alter {
     padding: 0.4rem 1rem;
-    font-size: 0.9em;
-    background-color: #fff; }
+    font-size: 0.9em; }
 
 .table-play .col-position input {
   max-width: 100px;
