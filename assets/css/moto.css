@@ -412,7 +412,8 @@ thead.mt-thead tr th {
     color: #FF8300;
     font-weight: bold;
     margin-top: 10px;
-    transition: all 0.4s ease-in-out 0s; }
+    transition: all 0.4s ease-in-out 0s;
+    white-space: normal; }
     .moto-play-card .btn-transparent:hover {
       color: #fff;
       background-color: #FF8300; }
