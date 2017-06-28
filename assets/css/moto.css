@@ -405,16 +405,17 @@ thead.mt-thead tr th {
     font-size: 0.9em;
     text-transform: uppercase; }
   .moto-play-card .btn-transparent {
-    border: 2px solid #fff;
+    border: 2px solid #FF8300;
     background-color: transparent;
     font-size: 0.9em;
     width: 100%;
-    color: #fff;
+    color: #FF8300;
+    font-weight: bold;
     margin-top: 10px;
     transition: all 0.4s ease-in-out 0s; }
     .moto-play-card .btn-transparent:hover {
-      border-color: #FF8300;
-      color: #FF8300; }
+      color: #fff;
+      background-color: #FF8300; }
   .moto-play-card__head {
     margin-top: -15px;
     padding: 5px 0; }
