@@ -501,10 +501,12 @@ table td .btn {
     padding: 0.4rem 1rem;
     font-size: 0.9em; }
 
-.table-play .col-position input {
-  max-width: 100px;
+.table-play .col-position select {
+  max-width: 150px;
+  min-width: 100px;
   padding: 3px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  color: #5D5D5D; }
 
 .table-play tr.select-empty td {
   padding: 0.5em 0.75em; }

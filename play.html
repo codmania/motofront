@@ -314,7 +314,19 @@ WARNING: Respond.js doesn't work if you view the page via file://
 <script type="text/template" id="selected-racer-template">
     <tr>
         <td class="col-position">
-            <input type="number" class="input-primary" min="0">
+            <select class="selectpicker show-tick">
+                <option></option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
         </td>
         <td class="text-meta"><%= racer.racer_id %></td>
         <td class="text-xs-left color-odd text-bold"><%= racer.name %></td>
