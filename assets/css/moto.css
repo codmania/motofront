@@ -496,7 +496,8 @@ table td .btn {
   vertical-align: middle; }
   .table-play tbody tr td.color-odd {
     color: rgba(98, 0, 234, 0.7); }
-  .table-play tbody tr td .btn-alter {
+  .table-play tbody tr td .btn-alter,
+  .table-play tbody tr td .btn-dang {
     padding: 0.4rem 1rem;
     font-size: 0.9em; }
 
