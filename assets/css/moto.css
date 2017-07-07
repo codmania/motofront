@@ -436,9 +436,14 @@ thead.mt-thead tr th {
   text-align: left; }
   .table-contests .col-contests__mark {
     display: inline-block;
-    vertical-align: middle; }
+    float: left;
+    padding-top: 12px; }
   .table-contests .col-contests__cont {
     color: rgba(98, 0, 234, 0.7); }
+    .table-contests .col-contests__cont span {
+      vertical-align: middle; }
+    .table-contests .col-contests__cont span.icon-status {
+      color: rgba(98, 0, 234, 0.7); }
     .table-contests .col-contests__cont i.ion-android-bookmark {
       font-size: 2em;
       color: rgba(98, 0, 234, 0.5);
@@ -463,7 +468,7 @@ thead.mt-thead tr th {
       vertical-align: middle; }
 
 .table-contests tbody tr td {
-  padding: 0 0.75em;
+  padding: 0.3em 0.75em;
   color: #5D5D5D; }
   .table-contests tbody tr td .ion-record {
     font-size: 0.5em;

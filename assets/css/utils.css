@@ -117,7 +117,7 @@ button:focus {
   font-weight: bold; }
 
 .btn-dang {
-  background-color: red;
+  background-color: #e65252;
   color: #fff;
   font-weight: bold; }
 
@@ -193,7 +193,7 @@ div.profile-tab {
 
 .tab-with-intro {
   padding-left: 0 !important;
-  min-width: 200px;
+  padding-right: 60px !important;
   text-align: left; }
   .tab-with-intro > span {
     display: block; }
@@ -707,7 +707,7 @@ button.btn {
       font-weight: bold;
       display: block;
       float: left;
-      background-color: #FF8300; }
+      background-color: rgba(98, 0, 234, 0.7); }
     .static-list .item-group span.item-content {
       display: block;
       float: left;
