@@ -621,6 +621,20 @@ table td .btn {
       background-color: #6200ea;
       margin-bottom: 20px; }
 
+table.user-info {
+  border: 0; }
+  table.user-info td span {
+    font-weight: normal;
+    color: #777;
+    font-size: 0.8em;
+    text-transform: uppercase; }
+  table.user-info td div {
+    color: #555; }
+  table.user-info td:first-child {
+    border-left: 0; }
+  table.user-info td:last-child {
+    border-right: 0; }
+
 @media (max-width: 991px) {
   .navbar-moto__primary li.nav-item a {
     color: #fff !important; }
