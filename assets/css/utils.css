@@ -304,9 +304,9 @@ hr {
 .navbar {
   z-index: 100; }
   .navbar .navbar-nav .active > .nav-link {
-    color: #FF8300 !important; }
+    color: #6200ea !important; }
   .navbar .navbar-nav li a.nav-link:hover {
-    color: #FF8300 !important; }
+    color: #6200ea !important; }
 
 .navbar-moto__primary {
   height: 50px;

@@ -410,11 +410,11 @@ hr {
 
     .navbar-nav {
         .active > .nav-link {
-            color: $secondary !important;
+            color: $primary !important;
         }
 
         li a.nav-link:hover {
-            color: $secondary !important;
+            color: $primary !important;
         }
     }
 }
