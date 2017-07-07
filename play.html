@@ -134,34 +134,32 @@ WARNING: Respond.js doesn't work if you view the page via file://
             <div class="col-lg-6 col-md-6 col-xs-12">
                 <h5 class="mt-card__legend"><a href="#">Rules & Scoring</a></h5>
                 <div class="mt-card wow zoomIn" data-wow-delay=".6s">
-                    <div class="mt-card__content">
+                    <div class="mt-card__content results__content">
                         <a href="#" class="ribbon right">
                             Available Racers
                         </a>
-                        <div class="table-wrapper border-wrapper mt-20">
-                            <div class="table-search-input input-group">
-                                <input type="text" class="form-control" placeholder="Search..." id="searchInput" onkeyup="tableSearch(1)">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-secondary" type="button">
-                                        <i class="icon ion-ios-search"></i>
-                                    </button>
-                                </span>
-                            </div>
+                        <div class="table-search-input input-group mt-5">
+                            <input type="text" class="form-control" placeholder="Search..." id="searchInput" onkeyup="tableSearch(1)">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">
+                                    <i class="icon ion-ios-search"></i>
+                                </button>
+                            </span>
+                        </div>
 
-                            <div class="table-responsive mt-20">
-                                <table class="table table-bordered table-play mt-border racer-table" id="searchTable">
-                                    <thead class="mt-thead">
-                                        <tr>
-                                            <th>#</th>
-                                            <th class="text-xs-left">Name</th>
-                                            <th>Class</th>
-                                            <th>Status</th>
-                                            <th>Add</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
-                            </div>
+                        <div class="table-responsive" style="margin-top: 26px;">
+                            <table class="table table-bordered table-play mt-border racer-table" id="searchTable">
+                                <thead class="mt-thead">
+                                    <tr>
+                                        <th>#</th>
+                                        <th class="text-xs-left">Name</th>
+                                        <th>Class</th>
+                                        <th>Status</th>
+                                        <th>Add</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
                         </div>
                     </div>
                 </div>

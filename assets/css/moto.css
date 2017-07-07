@@ -297,6 +297,8 @@ thead.mt-thead tr th {
     transform: inherit; }
   .results__content .tabcontent {
     padding: 0; }
+  .results__content .table-search-input.input-group {
+    width: 40%; }
 
 .score-display {
   position: relative;
