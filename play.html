@@ -377,8 +377,8 @@ WARNING: Respond.js doesn't work if you view the page via file://
 <script type="text/javascript">
     $(window).on('load', function() {
         var labels = ['days', 'hours', 'minutes', 'seconds'],
-        nextYear = (new Date().getFullYear() + 1) + '/01/01',
-        // nextYear = '2015/01/01',
+        // nextYear = (new Date().getFullYear() + 1) + '/01/01',
+        nextYear = '2015/01/01',
         template = _.template($('#timer-template').html()),
         currDate = '00:00:00:00',
         nextDate = '00:00:00:00',

@@ -32,6 +32,6 @@
 // window.onload = function () {makeAllSortable();};
 
 $(document).ready(function() {
-    $('#resultsTable').DataTable();
-    $('#leaderboardTable').DataTable();
+    // $('#resultsTable').DataTable();
+    // $('#leaderboardTable').DataTable();
 });

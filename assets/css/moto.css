@@ -571,6 +571,9 @@ table td .btn {
   .mt-card__description .row .text-xs-left {
     font-size: 1.05em; }
 
+.table-hd-border thead tr th {
+  border-bottom: 2px solid #555 !important; }
+
 @media (max-width: 991px) {
   .navbar-moto__primary li.nav-item a {
     color: #fff !important; }
