@@ -373,12 +373,13 @@ thead.mt-thead tr th {
 .moto-table.stripe > tbody > tr:nth-of-type(odd):not(.moto-table__total) {
   background-color: rgba(98, 0, 234, 0.1); }
 
-.moto-table .total th {
-  text-align: right; }
-
-.moto-table .total td {
-  color: #FF8300;
-  font-size: 1em; }
+.moto-table tr.total {
+  border-top: 2px solid #6200ea; }
+  .moto-table tr.total th {
+    text-align: right; }
+  .moto-table tr.total td {
+    color: #FF8300;
+    font-size: 1em; }
 
 .moto-play-card {
   padding: 15px;
