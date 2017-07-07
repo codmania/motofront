@@ -73,11 +73,11 @@
     margin-top: 10px;
     line-height: 1.3em; }
   .mt-card__subheader {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: normal;
     line-height: 1.5em;
-    color: #5D5D5D;
-    margin-top: 10px; }
+    color: #555;
+    margin-top: 7px; }
   .mt-card__description {
     font-size: 1em;
     font-weight: normal;
