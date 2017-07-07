@@ -376,7 +376,7 @@ thead.mt-thead tr th {
   background-color: rgba(98, 0, 234, 0.1); }
 
 .moto-table tr.total {
-  border-top: 2px solid #6200ea; }
+  border-top: 2px solid #999; }
   .moto-table tr.total th {
     text-align: right; }
   .moto-table tr.total td {
@@ -582,7 +582,7 @@ table td .btn {
     font-size: 1.05em; }
 
 .table-hd-border thead tr th {
-  border-bottom: 2px solid #555 !important; }
+  border-bottom: 2px solid #999 !important; }
 
 .timer {
   display: block; }

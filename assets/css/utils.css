@@ -55,6 +55,9 @@ h2.h1 {
 .text-white {
   color: #fff; }
 
+.text-bg {
+  font-size: 1.1em !important; }
+
 .text-sm {
   font-size: 0.9em !important; }
 
